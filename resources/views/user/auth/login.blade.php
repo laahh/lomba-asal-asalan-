@@ -31,24 +31,24 @@
 
                     </div>
 
-                    <div class="relative my-5">
+                    {{-- <div class="relative my-5">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <img src="{{asset('img/email-login.png')}} " class="pt-2" alt="">
                         </div>
                         <input type="email" name="email" id="email" placeholder="Email"
-                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#F498C1]  focus:bg-white focus:outline-none"
+                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#5FC88F]  focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
 
 
-                    </div>
+                    </div> --}}
 
 
-                    <div class="relative">
+                    <div class="relative mt-3">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                             <img src="{{asset('img/password.png')}} " class="pt-2" alt="">
                         </div>
                         <input type="email" name="email" id="email" placeholder="Password"
-                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#F498C1]  focus:bg-white focus:outline-none"
+                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#9F9DF3]  focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
 
 
@@ -76,6 +76,31 @@
                         </button>
                     </a>
                 </form>
+
+                {{-- <div class="flex justify-evenly items-center">
+                    <div class="">
+                        <img class="w-72" src="{{asset('img/google-icon.png')}}" alt="">
+
+
+                    </div>
+                    <div>
+                        <img class="w-72" src="{{asset('img/fb-icon.png')}}" alt="">
+
+
+                    </div>
+                    <div>
+                        <img class="w-72" src="{{asset('img/apple-icon.png')}}" alt="">
+                    </div>
+
+
+                </div> --}}
+
+                <div class="inline-flex justify-center mx-auto">
+                    <img class="ml-10 md:ml-0" src="{{asset('img/google-icon.png')}}" alt="">
+                    <img class="-mx-24" src="{{asset('img/fb-icon.png')}}" alt="">
+                    <img class="" src="{{asset('img/apple-icon.png')}}" alt="">
+
+                </div>
 
 
 
