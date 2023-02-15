@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between px-10  py-6">
+<nav class="flex items-center justify-between px-10  py-6 ">
   
   
   <!-- drawer init and toggle -->

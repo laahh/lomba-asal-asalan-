@@ -16,23 +16,39 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
     <style>
         .pagination {
             display: none;
         }
-    </style>
-    {{-- boxicon --}}
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+        @media (max-width:640px){
+            body{
+                background-color: red;
+                background-image: url("/assets/mobile/bg.png");
+                background-position-y: -300px;
+               
+            }
+        }
+        @media (min-width: 640px) {
+            body {
+                background-image: none;
+            }
+        }
+</style>
+{{-- boxicon --}}
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body class="bg-[#FFB26B] overflow-hidden">
+<body class='sm:bg-[#FFB26B] overflow-hidden'>
     
     
     <div class="flex ">
         @include('user.layout.components.sidebar')
-        <main class="min-h-screen w-full bg-white sm:rounded-[60px]  sm:m-3 sm:shadow-xl sm:shadow-black">
+        <main class="min-h-screen w-full sm:bg-white  sm:rounded-[60px]  sm:m-3 sm:shadow-lg">
             @include('user.layout.components.navbar')
             @yield('content')
             {{-- @include('user.layout.components.footer') --}}
@@ -45,5 +61,7 @@
     
     @stack('notif')
     @stack('script')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
 </body>
 </html>
