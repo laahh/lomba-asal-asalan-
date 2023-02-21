@@ -31,15 +31,20 @@
         }
         @media (min-width: 1024px) {
             .jumbotron {
-                background-image: url("/assets/landing.png");
+                background-image: url("/assets/landing page/bg.png");
+                background-size: cover;
             }
+        }
+
+        #tes{
+          background-image: url("/assets/landing page/blender.png");
         }
   </style>
   <title>Teamup</title>
 </head>
 <body class="">
   
-  <div class="jumbotron bg-cover" >
+  <div class="jumbotron ">
     {{-- navbar --}}
     <nav class=" font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-20 top-0 left-0 border-gray-200 ">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
@@ -106,7 +111,14 @@
     
     {{-- Isometric --}}
   </div>
-  
+
+  <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
+  <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
+  </section>
+{{--   
+  <div id="tes" class="min-h-[600px] relative -top-64   bg-center bg-cover  scale-100" >
+    
+  </div> --}}
   
   
   {{-- carousel companies --}}
@@ -824,7 +836,7 @@
   </script>
   
   <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-{{--   
+  
   <script type="importmap">
     {
       "imports": {
@@ -834,7 +846,7 @@
       }
     }
   </script>
-  
+{{--   
   <script type="module">
     
     import * as THREE from 'three';

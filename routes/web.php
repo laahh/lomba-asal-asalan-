@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/form', function () {
+    return view('user.form');
+});
+
 Route::get('/', function () {
     return view('home');
 });
