@@ -36,3 +36,18 @@ Route::get('/role', function () {
 Route::get('/team-list', function () {
     return view('user.team-list');
 });
+
+Route::get('/tim-list', function () {
+    return view('dashboard-user.all-team');
+});
+
+
+Route::get('/tim-detail', function () {
+    return view('dashboard-user.team-detail');
+});
+
+
+
+Route::get('/testing', function () {
+    return view('admin.dashboard');
+});

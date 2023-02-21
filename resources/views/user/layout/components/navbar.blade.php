@@ -1,3 +1,4 @@
+
 <nav class="flex items-center justify-between px-10 bg-red-500 py-6 ">
   
   
