@@ -11,7 +11,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body>
+<body class="">
 
     {{-- navbar Mobile --}}
     <nav class="md:hidden lg:mx-20 bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
@@ -326,9 +326,9 @@
 
 
 
-    <div class="hidden md:block mx-24  min-h-screen bg-slate-100  flex flex-row ">
+    <div class="hidden md:block mx-24 min-h-screen bg-slate-100  flex flex-row ">
         <div class="flex">
-            <div class="flex flex-col w-[340px]   bg-white   rounded-r-3xl overflow-hidden">
+            <div class="flex flex-col w-[340px]  shadow-2xl   rounded-r-3xl overflow-hidden">
                 <ul class="flex flex-col py-4" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     <li class="py-3 sm:py-2 mr-5">
                         <a href="#"

@@ -31,7 +31,7 @@
         }
         @media (min-width: 1024px) {
             .jumbotron {
-                background-image: url("/assets/landing page/bg.png");
+                background-image: url("/assets/landing page/background.png");
                 background-size: cover;
             }
         }
@@ -112,9 +112,9 @@
     {{-- Isometric --}}
   </div>
 
-  <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
+  {{-- <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
   <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
-  </section>
+  </section> --}}
 {{--   
   <div id="tes" class="min-h-[600px] relative -top-64   bg-center bg-cover  scale-100" >
     

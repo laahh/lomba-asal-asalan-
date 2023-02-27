@@ -37,8 +37,16 @@ Route::get('/team-list', function () {
     return view('user.team-list');
 });
 
+Route::get('/tim', function () {
+    return view('dashboard-user.all-team2');
+});
+
 Route::get('/tim-list', function () {
     return view('dashboard-user.all-team');
+});
+
+Route::get('/tim-channel', function () {
+    return view('dashboard-user.tim-channel');
 });
 
 
