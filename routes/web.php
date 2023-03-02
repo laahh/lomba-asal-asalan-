@@ -41,6 +41,10 @@ Route::get('/tim', function () {
     return view('dashboard-user.all-team2');
 });
 
+Route::get('/calendar', function () {
+    return view('dashboard-user.calendar');
+});
+
 Route::get('/tim-list', function () {
     return view('dashboard-user.all-team');
 });

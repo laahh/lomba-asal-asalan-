@@ -18,7 +18,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   />
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
   {{-- boxicon --}}
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
@@ -31,7 +32,7 @@
         }
         @media (min-width: 1024px) {
             .jumbotron {
-                background-image: url("/assets/landing page/background.png");
+                /* background-image: url("/assets/landing page/background.png"); */
                 background-size: cover;
             }
         }
@@ -82,28 +83,44 @@
     </nav>
     
     {{-- Home --}}
-    <section id="home" class=""> 
-      <div class="overflow-x-hidden flex justify-center text-center sm:flex  sm:relative sm:overflow-y-hidden">
-        <div class="text-center sm:mx-auto">
-          <h1 class="px-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-red-500 to-yellow-500 mx-auto text-center mt-24  pt-26 sm:pt-28 xl:pt-36 sm:w-[64%] sm:mt-4 sm: text-4xl md:text-5xl lg:text-6xl xl:text-[84px] sm:text-[40px] font-bold font-poppins">Be a Leader or Member</h1>
-          {{-- <h1 class="px-3  mx-auto text-center  text-black  pt-26 sm:pt-28 xl:pt-36 sm:w-[64%]  text-4xl md:text-5xl lg:text-6xl xl:text-[84px] sm:text-[40px] font-bold font-poppins">Be a <span class="text-orange-400">Leader</span> or <span class="text-orange-400">Member</span> </h1> --}}
-          <p class="px-14   sm:px-4 mx-auto sm:pt-2 pt-1 text-[21px] font-poppins text-center  w-full sm:w-3/4 md:w-96 xl:w-[50%] md:text-base ">Join your dream team and gain experience or invent your dream team</p>
+    <section class="bg-gradient-to-r from-sky-400 to-cyan-300 text-white">
+      <div
+        class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+      >
+        <div class="mx-auto max-w-3xl text-center">
+          <h1
+            class="text-white text-3xl font-extrabold text-transparent sm:text-5xl"
+          >
+            Understand User Flow.
+    
+            <span class="sm:block"> Increase Conversion. </span>
+          </h1>
+    
+          <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
+            tenetur fuga ducimus numquam ea!
+          </p>
           
-          
-          {{-- <h5 class="px-14 text-center  sm:px-4  pt-4 text-xl md:text-2xl xl:text-3xl font-poppins font-bold">Trending Team keyword </h5>
-          
-          <h5 class="text-[#F2994A] font-poppins font-bold sm:text-base md:text-lg xl:text-2xl px-3 sm:px-4  pt-1 text-center sm:text-left"> <span class="pr-2">Web Designer UI/UX</span>   <span class="pr-2" >Designer </span> <span class=""> Frontend</span> </h5> --}}
-          <div class="mt-5 flex justify-center  sm:px-4 lg:pb-20 xl:pb-28">
-            <button type="button" class="text-white  bg-orange-400 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center  mr-2 mb-2 ">Getting Started</button>
+
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+              href="/get-started"
+            >
+              Get Started
+            </a>
+    
+            <a
+              class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+              href="/about"
+            >
+              Learn More
+            </a>
           </div>
-          
-          {{-- <img src="{{asset('assets/isometric.png')}}" width="350px" class="mx-auto mt-5  sm:hidden scale-75" alt=""> --}}
-          
         </div>
-        
-        
-        
       </div>
+    </section>
+    
       
       
     </section>
@@ -112,6 +129,34 @@
     {{-- Isometric --}}
   </div>
 
+  <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+      <div class="mx-auto max-w-xl text-center sm:text-left">
+        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        </h2>
+  
+        <p class="hidden text-gray-500 md:mt-4 md:block">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+          tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
+          fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
+          duis.
+        </p>
+  
+        <div class="mt-4 md:mt-8">
+          <a
+            href="#"
+            class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+          >
+            Get Started Today
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="anim-container" class="w-[400px] h-[400px]"></div>
+    
+  </section>
+  
   {{-- <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
   <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
   </section> --}}
@@ -128,7 +173,7 @@
     </div>
     <div id="animation-carousel " class="relative" data-carousel="slide">
       <!-- Carousel wrapper -->
-      <div class="relative h-20  mb-10 bg-white overflow-hidden rounded-lg ">
+      <div class="relative h-20 mb-10 bg-white overflow-hidden rounded-lg ">
         <!-- Item 1 -->
         <div class="hidden duration-200 sm:mt-5  ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
           <div class="sm:flex sm:mx-auto">
@@ -211,7 +256,7 @@
       <div class="swiper mySwiper md:hidden lg:hidden">
         <div class="swiper-wrapper sm:mb-5">
           <div class="swiper-slide sm:flex  sm:justify-center ">
-            <div class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            <div class=" text-white sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gradient-to-b from-sky-400 to-sky-200 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
               <div class="flex justify-items-center pt-12 sm:pt-8">
                 <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
@@ -836,8 +881,17 @@
   </script>
   
   <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-  
-  <script type="importmap">
+  <script>
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('anim-container'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "{{asset('lottie/coding.json')}}"
+    });
+  </script>
+
+  {{-- <script type="importmap">
     {
       "imports": {
         "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
@@ -845,7 +899,7 @@
         "loader": "https://unpkg.com/three@0.149.0/examples/jsm/loaders/GLTFLoader.js"
       }
     }
-  </script>
+  </script> --}}
 {{--   
   <script type="module">
     
