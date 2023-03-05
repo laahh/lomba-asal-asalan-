@@ -59,3 +59,7 @@ Route::get('/tim-detail', function () {
 Route::get('/testing', function () {
     return view('admin.dashboard');
 });
+
+Route::get('/myteam', function () {
+    return view('dashboard-user.myteam');
+});

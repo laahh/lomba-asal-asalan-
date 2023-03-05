@@ -11,18 +11,19 @@
 
 <body class="font-poppins ">
 
-    <section class="flex flex-col md:flex-row h-screen items-center ">
+    <section class="  flex flex-col md:flex-row h-screen items-center ">
         <div
-            class="bg-[#e7e8f0] w-full md:max-w-md lg:max-w-full md:mx-auto md:my-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
+            class=" w-full md:max-w-md lg:max-w-full md:mx-auto md:my-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
             <div class="w-full h-100">
                 {{-- <img src="{{asset('img/logo.png')}}" width="" class="mr-3 mt-10 sm:h-9" alt="Flowbite Logo"> --}}
-                <img class="mt-14 w-52 mx-auto" src="{{asset('img/logo-login.png')}}" alt="">
+                <div id="login" class="w-56 mx-auto">
+                </div>
                 <h1 class="font-poppins text-3xl  text-center">Login</h1>
                 <form action="" class="mt-4">
 
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <img src="{{asset('img/profile-login.png')}} " class="pt-2" alt="">
+                            <img src="assets\images\email-login.png" class="pt-2" alt="">
                         </div>
                         <input type="email" name="email" id="email" placeholder="Username"
                             class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#F498C1]  focus:bg-white focus:outline-none"
@@ -45,7 +46,7 @@
 
                     <div class="relative mt-3">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <img src="{{asset('img/password.png')}} " class="pt-2" alt="">
+                            <img src="assets\images\password.png " class="pt-2" alt="">
                         </div>
                         <input type="email" name="email" id="email" placeholder="Password"
                             class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#9F9DF3]  focus:bg-white focus:outline-none"
@@ -69,7 +70,7 @@
                         <a href="#" class="ml-auto text-sm text-blue-700 hover:underline ">Lost Password?</a>
                     </div>
 
-                    <a href="{{url('/role')}}">
+                    <a href="{{url('/dashboard')}}">
                         <button type="button"
                             class="w-full block bg-[#191C32]  text-white font-semibold rounded-3xl px-4 py-3 mt-6 mb-2">
                             Log In
@@ -99,7 +100,6 @@
                     <img class="ml-10 md:ml-0" src="{{asset('img/google-icon.png')}}" alt="">
                     <img class="-mx-24" src="{{asset('img/fb-icon.png')}}" alt="">
                     <img class="" src="{{asset('img/apple-icon.png')}}" alt="">
-
                 </div>
 
 
@@ -131,22 +131,34 @@
                         <span class="ml-4">Log in with Google</span>
                     </div>
                 </a> --}}
-
-
             </div>
-        </div>
-
-        <div class="bg-purple-600 hidden lg:block w-full md:w1/2 xl:w-2/3 h-screen">
-            <img src="https://images.unsplash.com/photo-1633536726481-465c3676851d" alt=""
-                class="w-full h-full object-cover object-center">
         </div>
     </section>
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
 
 
+    <script>
+        var animation = bodymovin.loadAnimation({
+        container: document.getElementById('login'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '{{asset('lottie/39701-robot-bot-3d.json')}}'
+      })
+    </script>
 
+    <script>
+        var animation = bodymovin.loadAnimation({
+    container: document.getElementById('login-testing'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '{{asset('lottie/107385-login.json')}}'
+  })
+    </script>
 </body>
 
 </html>
