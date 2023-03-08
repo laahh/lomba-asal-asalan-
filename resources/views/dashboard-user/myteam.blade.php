@@ -212,8 +212,8 @@
                             <div class="divide-y divide-gray-100 dark:divide-gray-700">
                                 <a href="#" class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
                                     <div class="flex-shrink-0">
-                                        <img class="rounded-full w-11 h-11"
-                                            src="/docs/images/people/profile-picture-1.jpg" alt="Jese image">
+                                        <img class="rounded-full w-11 h-11" src="{{asset('assets/img/team-1.jpg')}}"
+                                            alt="Jese image">
                                         <div
                                             class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-blue-600 border border-white rounded-full dark:border-gray-800">
                                             <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor"
@@ -237,8 +237,8 @@
                                 </a>
                                 <a href="#" class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
                                     <div class="flex-shrink-0">
-                                        <img class="rounded-full w-11 h-11"
-                                            src="/docs/images/people/profile-picture-2.jpg" alt="Joseph image">
+                                        <img class="rounded-full w-11 h-11" src="{{asset('assets/img/team-2.jpg')}}"
+                                            alt="Joseph image">
                                         <div
                                             class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-gray-900 border border-white rounded-full dark:border-gray-800">
                                             <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor"
@@ -259,8 +259,8 @@
                                 </a>
                                 <a href="#" class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
                                     <div class="flex-shrink-0">
-                                        <img class="rounded-full w-11 h-11"
-                                            src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
+                                        <img class="rounded-full w-11 h-11" src="{{asset('assets/img/team-3.jpg')}}"
+                                            alt="Bonnie image">
                                         <div
                                             class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-red-600 border border-white rounded-full dark:border-gray-800">
                                             <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor"
@@ -281,8 +281,8 @@
                                 </a>
                                 <a href="#" class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
                                     <div class="flex-shrink-0">
-                                        <img class="rounded-full w-11 h-11"
-                                            src="/docs/images/people/profile-picture-4.jpg" alt="Leslie image">
+                                        <img class="rounded-full w-11 h-11" src="{{asset('assets/img/team-4.jpg')}}"
+                                            alt="Leslie image">
                                         <div
                                             class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-green-400 border border-white rounded-full dark:border-gray-800">
                                             <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor"
@@ -304,8 +304,8 @@
                                 </a>
                                 <a href="#" class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
                                     <div class="flex-shrink-0">
-                                        <img class="rounded-full w-11 h-11"
-                                            src="/docs/images/people/profile-picture-5.jpg" alt="Robert image">
+                                        <img class="rounded-full w-11 h-11" src="{{asset('assets/img/team-1.jpg')}}"
+                                            alt="Robert image">
                                         <div
                                             class="absolute flex items-center justify-center w-5 h-5 ml-6 -mt-5 bg-purple-500 border border-white rounded-full dark:border-gray-800">
                                             <svg class="w-3 h-3 text-white" aria-hidden="true" fill="currentColor"
@@ -353,21 +353,17 @@
 
     </div>
 
-    <div class="grid grid-cols-2 mx-10 ">
-        <div class="grid grid-cols-3 col-span-1 ">
-            <a href="" class="rounded-md mr-3 group relative block h-64 ">
+    <div class="lg:grid lg:grid-cols-2 lg:mx-10 ">
+        <div class="lg:grid lg:grid-cols-3 lg:col-span-1 flex w-full bg-red-500 overflow-x-auto scrollbar ">
+            <a href="" class="w-72 rounded-md mr-3 group relative block h-40 ">
                 <span class="absolute inset-0 border-2 border-dashed rounded-2xl border-black"></span>
 
                 <div
-                    class="relative flex h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                    class="relative flex w-44 h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                     <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 sm:h-12 sm:w-12" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-
-                        <h2 class="mt-4 text-xl font-medium sm:text-2xl">Team Web Developer</h2>
+                        <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/1.png') }}"
+                            alt="Neil image">
+                        <h2 class="mt-4 text-md text-center font-medium sm:text-2xl">Team Web Developer</h2>
                     </div>
 
                     <div
@@ -382,24 +378,21 @@
                     </div>
                 </div>
             </a>
-            <a href="" class="rounded-md mr-3 group relative block h-64 ">
+            <a href="" class=" w-64 rounded-md mr-3 group relative block h-40 ">
                 <span class="absolute inset-0 border-2 border-dashed rounded-2xl border-black"></span>
 
                 <div
-                    class="relative flex h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                    class="relative w-44 flex h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                     <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 sm:h-12 sm:w-12" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/2.png') }}"
+                            alt="Neil image">
 
-                        <h2 class="mt-4 text-xl font-medium sm:text-2xl">Team Web Developer</h2>
+                        <h2 class="mt-4 text-md text-center font-medium sm:text-2xl">Team Web Developer</h2>
                     </div>
 
                     <div
-                        class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                        <h3 class="mt-4 text-xl font-medium sm:text-2xl">Team Web Developer</h3>
+                        class="absolute w-44 p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                        <h3 class="mt-4 text-md font-medium sm:text-2xl">Team Web Developer</h3>
 
                         <p class="mt-4 text-sm sm:text-base">
                             Moto dari team
@@ -409,24 +402,21 @@
                     </div>
                 </div>
             </a>
-            <a href="" class="rounded-md mr-3 group relative block h-64 ">
+            <a href="" class=" w-64 rounded-md mr-3 group relative block h-40 ">
                 <span class="absolute inset-0 border-2 border-dashed rounded-2xl border-black"></span>
 
                 <div
-                    class="relative flex h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                    class="relative w-44 flex h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                     <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 sm:h-12 sm:w-12" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/4.png') }}"
+                            alt="Neil image">
 
-                        <h2 class="mt-4 text-xl font-medium sm:text-2xl">Team Web Developer</h2>
+                        <h2 class="mt-4 text-md text-center font-medium sm:text-2xl">Team Web Developer</h2>
                     </div>
 
                     <div
-                        class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                        <h3 class="mt-4 text-xl font-medium sm:text-2xl">Team Web Developer</h3>
+                        class="absolute w-44 p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                        <h3 class="mt-4 text-md font-medium sm:text-2xl">Team Web Developer</h3>
 
                         <p class="mt-4 text-sm sm:text-base">
                             Moto dari team
@@ -436,22 +426,42 @@
                     </div>
                 </div>
             </a>
+            <a href="" class=" w-64 rounded-md mr-3 group relative block h-40 ">
+                <span class="absolute inset-0 border-2 border-dashed rounded-2xl border-black"></span>
+
+                <div
+                    class="relative w-44 flex h-full transform items-end border-2 rounded-2xl border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                        <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/3.png') }}"
+                            alt="Neil image">
+
+                        <h2 class="mt-4 text-md text-center font-medium sm:text-2xl">Team Web Developer</h2>
+                    </div>
+
+                    <div
+                        class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                        <h3 class="mt-4 text-md font-medium sm:text-2xl">Team Web Developer</h3>
+
+                        <p class="mt-4 text-sm sm:text-base">
+                            Moto dari team
+                        </p>
+
+                        <p class="mt-8 font-bold">Read more</p>
+                    </div>
+                </div>
+            </a>
+
 
         </div>
 
-        <div class="ml-10">
+        <div class="xl:ml-10 h-[40vh] max-h-[40vh] bg-blue-500 mt-4 overflow-y-auto scrollbar">
 
 
             <div id="alert-additional-content-5"
-                class=" p-4 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800"
+                class=" px-2 py-2 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800"
                 role="alert">
                 <div class="flex items-center">
-                    <svg aria-hidden="true" class="w-5 h-5 mr-2 text-gray-800 dark:text-gray-300" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                            clip-rule="evenodd"></path>
-                    </svg>
+                    <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/3.png') }}" alt="Neil image">
                     <span class="sr-only">Info</span>
                     <h3 class="text-lg font-medium text-gray-800 dark:text-gray-300">Task List Frontend Developer</h3>
                 </div>
@@ -459,36 +469,14 @@
                     More info about this info dark goes here. This example text is going to run a bit longer so that you
                     can see how spacing within an alert works with this kind of content.
                 </div>
-                <div class="flex">
-                    <button type="button"
-                        class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xs px-3 py-1.5 mr-2 text-center inline-flex items-center dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-800">
-                        <svg aria-hidden="true" class="-ml-0.5 mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                            <path fill-rule="evenodd"
-                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        View more
-                    </button>
-                    <button type="button"
-                        class="text-gray-800 bg-transparent border border-gray-700 hover:bg-gray-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xs px-3 py-1.5 text-center dark:border-gray-600 dark:hover:bg-gray-600 dark:focus:ring-gray-800 dark:text-gray-300 dark:hover:text-white"
-                        data-dismiss-target="#alert-additional-content-5" aria-label="Close">
-                        Dismiss
-                    </button>
-                </div>
+
             </div>
 
             <div id="alert-additional-content-5"
                 class="my-5 p-4 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800"
                 role="alert">
                 <div class="flex items-center">
-                    <svg aria-hidden="true" class="w-5 h-5 mr-2 text-gray-800 dark:text-gray-300" fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                            clip-rule="evenodd"></path>
-                    </svg>
+                    <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/4.png') }}" alt="Neil image">
                     <span class="sr-only">Info</span>
                     <h3 class="text-lg font-medium text-gray-800 dark:text-gray-300">Task List Backend Developer
                     </h3>
@@ -497,24 +485,22 @@
                     More info about this info dark goes here. This example text is going to run a bit longer so that you
                     can see how spacing within an alert works with this kind of content.
                 </div>
-                <div class="flex">
-                    <button type="button"
-                        class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xs px-3 py-1.5 mr-2 text-center inline-flex items-center dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-800">
-                        <svg aria-hidden="true" class="-ml-0.5 mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                            <path fill-rule="evenodd"
-                                d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        View more
-                    </button>
-                    <button type="button"
-                        class="text-gray-800 bg-transparent border border-gray-700 hover:bg-gray-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xs px-3 py-1.5 text-center dark:border-gray-600 dark:hover:bg-gray-600 dark:focus:ring-gray-800 dark:text-gray-300 dark:hover:text-white"
-                        data-dismiss-target="#alert-additional-content-5" aria-label="Close">
-                        Dismiss
-                    </button>
+
+            </div>
+            <div id="alert-additional-content-5"
+                class="my-5 p-4 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800"
+                role="alert">
+                <div class="flex items-center">
+                    <img class="w-12 h-12 mx-auto rounded-full" src="{{ asset('assets/tim/4.png') }}" alt="Neil image">
+                    <span class="sr-only">Info</span>
+                    <h3 class="text-lg font-medium text-gray-800 dark:text-gray-300">Task List Backend Developer
+                    </h3>
                 </div>
+                <div class="mt-2 mb-4 text-sm text-gray-800 dark:text-gray-300">
+                    More info about this info dark goes here. This example text is going to run a bit longer so that you
+                    can see how spacing within an alert works with this kind of content.
+                </div>
+
             </div>
 
 
