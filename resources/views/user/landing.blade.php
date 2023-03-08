@@ -19,41 +19,24 @@
   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
-
+  
   {{-- boxicon --}}
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <style>
-    @media (max-width:640px){
-            .jumbotron{
-                /* background-color: red; */
-                background-image: none;
-                /* background-position-y: -300px; */
-            }
-        }
-        @media (min-width: 1024px) {
-            .jumbotron {
-                /* background-image: url("/assets/landing page/background.png"); */
-                background-size: cover;
-            }
-        }
-
-        #tes{
-          background-image: url("/assets/landing page/blender.png");
-        }
-  </style>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  {{-- boxicon --}}
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <title>Teamup</title>
 </head>
 <body class="">
   
-  <div class="jumbotron ">
+  <div class="jumbotron bg-cover" >
     {{-- navbar --}}
     <nav class=" font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-20 top-0 left-0 border-gray-200 ">
       <div class=" flex flex-wrap justify-between items-center mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
           {{-- <img src="{{asset('img/logo.png')}}" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> --}}
-          <p class="text-4xl font-bold text-[#F2994A]">TeamUp</p>
+          <p class="text-4xl font-bold text-white">TeamUp</p>
         </a>
         <div class="flex md:order-2">
           <button type="button" class="text-white bg-[#F2994A] hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 "><a href="{{url('/login')}}">Login</a></button>
@@ -65,19 +48,19 @@
         <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul class="flex flex-col p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
             <li>
-              <a href="#home" class="block  py-2 pr-4 pl-3 lg:text-base text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
+              <a href="#home" class="block  py-2 pr-4 pl-3 lg:text-base text-white bg-blue-700 rounded md:bg-transparent  md:p-0 " aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#kategori" class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Categori</a>
+              <a href="#kategori" class="block py-2 pr-4 pl-3 lg:text-base text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Categori</a>
             </li>
             <li>
-              <a href="#create-profile" class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Fitur</a>
+              <a href="#create-profile" class="block py-2 pr-4 pl-3 lg:text-base text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Fitur</a>
             </li>
             <li>
-              <a href="#service" class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Service</a>
+              <a href="#service" class="block py-2 pr-4 pl-3 lg:text-base text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Service</a>
             </li>
             <li>
-              <a href="{{url('/login')}}" class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Team List</a>
+              <a href="{{url('/login')}}" class="block py-2 pr-4 pl-3 lg:text-base text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Team List</a>
             </li>
           </ul>
         </div>
@@ -85,98 +68,56 @@
     </nav>
     
     {{-- Home --}}
-    <section class="bg-gradient-to-r -z-30 from-sky-400 to-cyan-300 text-white">
-      <div
-        class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
-      >
-        <div class="mx-auto max-w-3xl text-center">
-          <h1
-            class="text-white z-40 text-3xl font-extrabold text-transparent sm:text-5xl"
-          >
-            Understand User Flow.
-    
-            <span class="sm:block"> Increase Conversion. </span>
-          </h1>
-    
-          <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-            tenetur fuga ducimus numquam ea!
-          </p>
-          
-
-          <div class="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-              href="/get-started"
-            >
-              Get Started
-            </a>
-    
-            <a
-              class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="/about"
-            >
-              Learn More
-            </a>
-          </div>
+    <section class="bg-gradient-to-b from-sky-400 to-sky-50">
+        <div class="mx-auto max-w-screen-xl px-4 py-32 md:flex lg:flex lg:h-screen lg:items-center">
+        <div class="md:w-1/2 relative md:max-w-1/2  text-left">
+                <h1 class=" text-3xl font-extrabold text-white sm:text-5xl">Jadilah Tim Leader Atau Member</h1>
+                
+                <div id="efek" class="absolute w-full h-full -top-10  left-0 ">
+                  
+                </div>
+                {{-- <span class="sm:block"> Increase Conversion. </span> --}}
+            
+            
+            <p class="text-white mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
+                tenetur fuga ducimus numquam ea!
+            </p>
+            
+            
+            <div class="mt-8 flex flex-wrap justify-start gap-4">
+                <a
+                class="block w-full rounded-lg shadow-md bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-blue-800 px-12 py-3 text-sm font-medium text-white hover:from-sky-500 hover:to-blue-800 hover:text-white  sm:w-auto"
+                href="/get-started"
+                >
+                Get Started
+                </a>
+            
+               
+            </div>
+            
         </div>
-      </div>
-    </section>
+        <div id="anim-container" class="md:w-1/2">
     
-      
-      
-    </section>
+        </div>
+
+    </div>
+</section>
     
     
     {{-- Isometric --}}
   </div>
-
-  <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
-    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-xl text-center sm:text-left">
-        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit
-        </h2>
-  
-        <p class="hidden text-gray-500 md:mt-4 md:block">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-          tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
-          fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
-          duis.
-        </p>
-  
-        <div class="mt-4 md:mt-8">
-          <a
-            href="#"
-            class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
-          >
-            Get Started Today
-          </a>
-        </div>
-      </div>
-    </div>
-    {{-- <div id="anim-container" class="w-[400px] h-[400px]"></div> --}}
-    {{-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> --}}
-<lottie-player class="absolute top-20 left-1/3 " src="https://assets2.lottiefiles.com/packages/lf20_frdtxW.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"    autoplay></lottie-player>
-  </section>
-  
-  {{-- <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
-  <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
-  </section> --}}
-{{--   
-  <div id="tes" class="min-h-[600px] relative -top-64   bg-center bg-cover  scale-100" >
-    
-  </div> --}}
   
   
+  <div class="bg-sky-50">
   {{-- carousel companies --}}
-  <section id="" class="z-0">
+  <section id="" class="z-0 bg-sky-50">
     <div class="pt-10  ">
       <h5 class=" px-20  text-center font-light font-poppins lg:text-xl text-bold">Join Most Well Known <span class="text-[#F2994A] ">Companies</span>  Around The World</h5>
     </div>
-    <div id="animation-carousel " class="relative" data-carousel="slide">
+    <div id="animation-carousel" class="relative" data-carousel="slide">
       <!-- Carousel wrapper -->
-      <div class="relative h-20 mb-10 bg-white overflow-hidden rounded-lg ">
+      <div class="relative h-20  mb-10  overflow-hidden rounded-lg ">
         <!-- Item 1 -->
         <div class="hidden duration-200 sm:mt-5  ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
           <div class="sm:flex sm:mx-auto">
@@ -259,7 +200,7 @@
       <div class="swiper mySwiper md:hidden lg:hidden">
         <div class="swiper-wrapper sm:mb-5">
           <div class="swiper-slide sm:flex  sm:justify-center ">
-            <div class=" text-white sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gradient-to-b from-sky-400 to-sky-200 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            <div class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
               <div class="flex justify-items-center pt-12 sm:pt-8">
                 <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
@@ -448,7 +389,7 @@
       
       
       {{-- versi SM-MD-LG --}}
-      <div class=" sm:hidden md:flex sm:flex-wrap sm:justify-center hidden sm:mx-3  ">
+      <div class="hidden sm:hidden md:flex sm:flex-wrap sm:justify-center sm:mx-3  ">
         <div class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
           <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
             <div>
@@ -478,7 +419,7 @@
         </div>
         
         
-        <div class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+        <div class="text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-10 ">
           <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
             <div>
               <img src="{{asset('img/finance.png')}}" width="120px" class="pl-4 sm:pl-4 " alt="">
@@ -559,44 +500,48 @@
       </div>
     </div>
   </section>
-  
+</div>
   
   
   
   
   {{-- fiture 1 --}}
   
-  <section id="create-profile" class=" pb-10 sm:pb-0 overflow-hidden" >
+  <section id="create-profile" class="bg-sky-50 pb-10 sm:pb-0 overflow-hidden" >
     <div class="w-[360px] sm:w-full  mx-auto rounded-3xl sm:rounded-none shadow-2xl sm:shadow-none mb-10 ">
       <div class="sm:flex">
-        <div class=" sm:w-1/2 md:1/2 xl:w-1/2 ">
-          <img src="{{asset('assets/landing page/3dmember.png')}} "  class="mx-auto sm:hidden scale-75 lg:scale-75 " alt="">
+        <div id="leader" class="sm:w-1/2 md:1/2 xl:w-1/2 ">
+          {{-- <img src="{{asset('assets/landing page/3dmember.png')}} "  class="mx-auto sm:hidden scale-75 lg:scale-75 " alt="">
           <img src="{{asset('assets/landing page/3dmember.png')}}" width="450px"  class="hidden scale-90 sm:block sm:max-w-[90%] sm:max-h-[90%] md:max-w-[95%] md:max-h-[95%] sm:scale-100 md:scale-90  sm:float-right md:float-right lg:hidden" alt="">
           <img src="{{asset('assets/landing page/3dmember.png')}}" width="550px"  class="hidden   lg:block xl:hidden   scale-75" alt="">
-          <img src="{{asset('assets/landing page/3dmember.png')}}" width="550px"  class="hidden   lg:hidden xl:block  md:ml-12   scale-90" alt="">
+          <img src="{{asset('assets/landing page/3dmember.png')}}" width="550px"  class="hidden   lg:hidden xl:block  md:ml-12   scale-90" alt=""> --}}
         </div>
-        <div class=" sm:w-1/2 -mt-8 leading-7 sm:mt-4 md:mt-12 md:ml-4 lg:mt-24 xl:mt-36 sm:leading-6 md:leading-8 lg:leading-10 lg:w-1/2">
+        <div class="sm:w-1/2 leading-7 self-center sm:leading-6 md:leading-8 lg:leading-10 lg:w-1/2  ">
         {{-- <div class="sm:w-96 bg-yellow-500  sm:-ml-20 md:-ml-10 lg:pl-32 lg:w-full   sm:mt-10 xl:mt-36 "> --}}
-          <h5 class="px-4 text-center sm:text-left font-poppins text-[#F2994A] text-xl sm:text-2xl xl:ml-12">Member</h5>
-          <h3 class="px-4 text-center text-2xl sm:text-xl sm:text-left md:text-2xl lg:text-4xl font-poppins font-bold  lg:w-[85%] xl:ml-12">Join Your Dream Team</h3>
-          <p class="px-4 text-center sm:w-[85%] sm:text-justify lg:text-justify lg:w-[85%] lg:text-[21px] font-light font-poppins xl:ml-12">create your account as a member and choose your favorite team, get a project with your team, and grow with the team</p>
-          <p class="px-auto hidden sm:block sm:px-4 md:px-5 lg:text-[21px] font-poppins  font-light xl:ml-12"> <i class='bx bxs-badge-check' ></i>  Join team</p>
-          <p class="px-auto  hidden sm:block sm:px-4 md:px-5 lg:text-[21px] font-poppins  font-light xl:ml-12"> <i class='bx bxs-badge-check' ></i>  Find a job</p>
-          <p class="px-auto  lg:w-[85%] hidden sm:block sm:px-4 sm:w-[85%] sm:text-justify md:px-5 lg:text-[21px] lg:text-justify font-poppins  font-light xl:ml-12"> <i class='bx bxs-badge-check' ></i>  Send a message via group chat</p>
           
-          <button type="button" class="text-white xl:ml-16 mx-[30%] sm:mx-4  mt-2  bg-[#F2994A] hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-6 ">Create Account</button>
-        </div>
+            <h5 class=" text-center sm:text-left font-poppins text-xl sm:text-2xl ">Member</h5>
+          <h3 class=" text-center text-2xl sm:text-xl sm:text-left md:text-2xl lg:text-4xl font-poppins font-bold  lg:w-[85%] ">Join Your Dream Team</h3>
+          <p class=" text-center sm:w-[85%] sm:text-justify lg:text-justify lg:w-[85%] lg:text-[21px] font-light font-poppins ">create your account as a member and choose your favorite team, get a project with your team, and grow with the team</p>
+          <p class="px-auto hidden sm:block   lg:text-[21px] font-poppins  font-light "> <i class='bx bxs-badge-check' ></i>  Join team</p>
+          <p class="px-auto  hidden sm:block   lg:text-[21px] font-poppins  font-light "> <i class='bx bxs-badge-check' ></i>  Find a job</p>
+          <p class="px-auto  lg:w-[85%] hidden sm:block  sm:w-[85%] sm:text-justify  lg:text-[21px] lg:text-justify font-poppins  font-light "> <i class='bx bxs-badge-check' ></i>  Send a message via group chat</p>
+          
+          <button type="button" class="text-white mt-2  bg-[#F2994A] hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-6 ">Create Account</button>
+        
+          
+          
       </div>
     </div>
   </section>
 
 
   {{-- fiture 2 --}}
-  <section id="create-profile" class="pb-10 overflow-hidden" >
+  <section id="create-profile" class="pb-10 bg-gradient-to-t from-sky-200 to-sky-50 overflow-hidden" >
     <div class="w-[360px] sm:w-full  mx-auto rounded-3xl sm:rounded-none shadow-2xl sm:shadow-none mb-10 ">
       <div class="sm:flex">
-        <div class="  sm:w-1/2 sm:-mt-2 lg:w-1/2  leading-7 sm:leading-6 lg:leading-10 md:ml-4 lg:ml-0">
-          <img src="{{asset('assets/landing page/3dleader.png')}}"  class="mx-auto sm:hidden scale-90 " alt="">
+        <div class="self-center  sm:w-1/2 sm:-mt-2 lg:w-1/2  leading-7 sm:leading-6 lg:leading-10 md:ml-4 lg:ml-0">
+          <div id="member" class="mx-auto sm:hidden "></div>
+          {{-- <img src="{{asset('assets/landing page/3dleader.png')}}"  class="mx-auto sm:hidden scale-90 " alt=""> --}}
         {{-- <div class="sm:w-96 bg-yellow-500  sm:-ml-20 md:-ml-10 lg:pl-32 lg:w-full   sm:mt-10 xl:mt-36 "> --}}
           <h5 class="px-4 font-poppins text-center text-[#F2994A] text-xl sm:text-left sm:text-2xl sm:ml-12 lg:ml-20 xl:ml-28">Member</h5>
           <h3 class="px-4 text-2xl text-center  sm:ml-12 sm:text-xl  sm:text-justify md:text-3xl lg:text-4xl font-poppins font-bold lg:w-[85%] lg:ml-20 xl:ml-28">Join Your Dream Team</h3>
@@ -607,10 +552,10 @@
           
           <button type="button" class="text-white lg:ml-20 xl:ml-32 mx-[30%] sm:mx-4 sm:ml-14 mt-2  bg-[#F2994A] hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-6 ">Create Account</button>
         </div>
-        <div class=" w-1/2 sm:1/2 xl:w-1/2">
-          <img src="{{asset('assets/landing page/3dleader.png')}}" width="450px"  class="hidden sm:block sm:-ml-6  lg:hidden md:mr-6 scale-105" alt="">
+        <div id="member-lg" class=" w-1/2 sm:1/2 xl:w-1/2">
+          {{-- <img src="{{asset('assets/landing page/3dleader.png')}}" width="450px"  class="hidden sm:block sm:-ml-6  lg:hidden md:mr-6 scale-105" alt="">
           <img src="{{asset('assets/landing page/3dleader.png')}}" width="625px"  class="hidden   lg:block xl:hidden  md:mr-6  scale-90" alt="">
-          <img src="{{asset('assets/landing page/3dleader.png')}}" width="625px"  class="hidden   lg:hidden xl:block  md:mr-36  scale-90 " alt="">
+          <img src="{{asset('assets/landing page/3dleader.png')}}" width="625px"  class="hidden   lg:hidden xl:block  md:mr-36  scale-90 " alt=""> --}}
         </div>
       </div>
     </div>
@@ -860,11 +805,14 @@
     </div>
   </footer>
   
+ 
+  {{-- <lottie-player class="absolute top-0" src="https://assets2.lottiefiles.com/packages/lf20_frdtxW.json"  background="transparent"  speed="1"  style="width: 400px; height:400px"    autoplay></lottie-player> --}}
   
   
   
-  
-  
+  <lottie-player id="firstLottie" src="https://assets5.lottiefiles.com/packages/lf20_anr54dsb.json" style="width:400px; height: 400px;">"></lottie-player>
+
+
   
   
   
@@ -882,19 +830,55 @@
       },
     });
   </script>
+  <script>
+    let animation = bodymovin.loadAnimation({
+        container: document.getElementById('anim-container'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: "{{asset('lottie/jumbotron.json')}}"
+    });
+    let efek = bodymovin.loadAnimation({
+        container: document.getElementById('efek'),
+        renderer: 'svg',
+        loop:false,
+        autoplay: true,
+        path: "{{asset('lottie/efek.json')}}"
+    });
+
+    let leader = bodymovin.loadAnimation({
+        container: document.getElementById('leader'),
+        renderer: 'svg',
+        loop:true,
+        autoplay: true,
+        path: "{{asset('lottie/leader.json')}}"
+    });
+
+    let member = bodymovin.loadAnimation({
+        container: document.getElementById('member'),
+        renderer: 'svg',
+        loop:true,
+        autoplay: true,
+        path: "{{asset('lottie/member.json')}}"
+    });
+
+    let member_lg = bodymovin.loadAnimation({
+        container: document.getElementById('member-lg'),
+        renderer: 'svg',
+        loop:true,
+        autoplay: true,
+        path: "{{asset('lottie/member.json')}}"
+    });
+</script>
+
+
   
   <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
-  <script>
-    var animation = bodymovin.loadAnimation({
-      container: document.getElementById('anim-container'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: "{{asset('lottie/coding.json')}}"
-    });
-  </script>
-
-  {{-- <script type="importmap">
+  {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+{{--   
+  <script type="importmap">
     {
       "imports": {
         "three": "https://unpkg.com/three@0.149.0/build/three.module.js",
@@ -902,8 +886,8 @@
         "loader": "https://unpkg.com/three@0.149.0/examples/jsm/loaders/GLTFLoader.js"
       }
     }
-  </script> --}}
-{{--   
+  </script>
+  
   <script type="module">
     
     import * as THREE from 'three';

@@ -18,7 +18,11 @@ Route::get('/form', function () {
 });
 
 Route::get('/', function () {
-    return view('home');
+    return view('landing.home');
+});
+
+Route::get('/landing', function () {
+    return view('user.landing');
 });
 
 Route::get('/login', function () {
@@ -46,7 +50,11 @@ Route::get('/calendar', function () {
 });
 
 Route::get('/tim-list', function () {
-    return view('dashboard-user.all-team');
+    return view('dashboard-user.all-team3');
+});
+
+Route::get('/all-tim', function () {
+    return view('dashboard-user.all-team3');
 });
 
 Route::get('/tim-channel', function () {
@@ -56,6 +64,10 @@ Route::get('/tim-channel', function () {
 
 Route::get('/tim-detail', function () {
     return view('dashboard-user.team-detail');
+});
+
+Route::get('/profile', function () {
+    return view('user.profile');
 });
 
 
