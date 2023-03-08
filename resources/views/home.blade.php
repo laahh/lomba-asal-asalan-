@@ -487,7 +487,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
                   Management
                 </h3>
-                <p class="pl-4 text-[#828282] ">87 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">87 Job tersedia</p>
               </div>
             </div>
           </div>
@@ -502,7 +502,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Video <br>
                   Editor
                 </h3>
-                <p class="pl-4 text-[#828282] ">120 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">120 Job tersedia</p>
               </div>
             </div>
           </div>
@@ -518,7 +518,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2">Finance
                   Management
                 </h3>
-                <p class="pl-2 text-[#828282] ">230 Jobs Available</p>
+                <p class="pl-2 text-[#828282] ">230 Job tersedia</p>
               </div>
             </div>
           </div>
@@ -532,7 +532,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Web <br>
                   Development
                 </h3>
-                <p class="pl-4 text-[#828282] ">100 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">100 Job tersedia</p>
               </div>
             </div>
           </div>
@@ -546,7 +546,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Graphic <br>
                   Designer
                 </h3>
-                <p class="pl-2 text-[#828282] ">65 Jobs Available</p>
+                <p class="pl-2 text-[#828282] ">65 Job tersedia</p>
               </div>
             </div>
           </div>
@@ -560,35 +560,35 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Business &
                   Consulting
                 </h3>
-                <p class="pl-4 text-[#828282] ">23 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">23 Job tersedia</p>
               </div>
             </div>
           </div>
           <div
             class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
-              <div>
-                <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
+              <div id="ui" class="w-24">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
                   Design
                 </h3>
-                <p class="pl-4 text-[#828282] ">120 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">120 Job tersedia</p>
               </div>
             </div>
           </div>
           <div
             class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
-              <div>
-                <img src="{{asset('img/marketing.png')}}" width="120px" class="pl-12 sm:pl-4 " alt="">
+              <div id="com" class="w-24">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Marketing &
                   Communication
                 </h3>
-                <p class="pl-4 text-[#828282] ">120 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">120 Job tersedia</p>
               </div>
             </div>
           </div>
@@ -1460,6 +1460,18 @@
   </script>
 
 
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('com'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/106080-digital-marketing-or-promotion-in-app-animation.json')}}'
+})
+  </script>
+
+
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('project'),
@@ -1500,6 +1512,16 @@ path: '{{asset('lottie/122848-graph.json')}}'
   loop: true,
   autoplay: true,
   path: '{{asset('lottie/70482-produccion-audiovisual.json')}}'
+})
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('ui'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/93152-ui-app-icon.json')}}'
 })
   </script>
 
