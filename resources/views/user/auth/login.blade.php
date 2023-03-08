@@ -7,60 +7,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body class="font-poppins ">
 
-    <section class="  flex flex-col md:flex-row h-screen items-center ">
+    <section class="flex flex-col md:flex-row h-screen items-center">
         <div
-            class=" w-full md:max-w-md lg:max-w-full md:mx-auto md:my-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
+            class="bg-white  w-full md:max-w-md lg:max-w-full md:mx-auto md:my-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
             <div class="w-full h-100">
                 {{-- <img src="{{asset('img/logo.png')}}" width="" class="mr-3 mt-10 sm:h-9" alt="Flowbite Logo"> --}}
-                <div id="login" class="w-56 mx-auto">
-                </div>
-                <h1 class="font-poppins text-3xl  text-center">Login</h1>
-                <form action="" class="mt-4">
-
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <img src="assets\images\email-login.png" class="pt-2" alt="">
-                        </div>
-                        <input type="email" name="email" id="email" placeholder="Username"
-                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#F498C1]  focus:bg-white focus:outline-none"
+                <p class="text-4xl font-bold text-[#F2994A]">TeamUp</p>
+                <h1 class="text-4xl mt-3 font-bold font-poppins">
+                    Welcome back
+                </h1>
+                <p class="font-poppins">Start your website in seconds. Don’t have an account? <span
+                        class="text-blue-600"><a href="{{url('/register')}}" class="text-decoration-none">Sign
+                            up.</a></span> </p>
+                <form action="{{url('/login')}}" class="mt-6" method="post">
+                    @csrf
+                    <div>
+                        <label for="" class="block text-gray-700">Email Adress</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                            class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
-
-
+                        @error('email')
+                        <div class="text-red-600">{{ $message }}</div>
+                        @enderror
                     </div>
 
-                    {{-- <div class="relative my-5">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <img src="{{asset('img/email-login.png')}} " class="pt-2" alt="">
-                        </div>
-                        <input type="email" name="email" id="email" placeholder="Email"
-                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#5FC88F]  focus:bg-white focus:outline-none"
+                    <div class="mt-4">
+                        <label for="" class="block text-gray-700">Password</label>
+                        <input type="password" name="password" id="email" placeholder="Enter your password"
+                            minlength="6"
+                            class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
-
-
-                    </div> --}}
-
-
-                    <div class="relative mt-3">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <img src="assets\images\password.png " class="pt-2" alt="">
-                        </div>
-                        <input type="email" name="email" id="email" placeholder="Password"
-                            class="w-full px-4 py-3 pl-14 rounded-3xl bg-white mt-2 border  focus:border-[#9F9DF3]  focus:bg-white focus:outline-none"
-                            autofocus autocomplete required>
-
-
+                        @error('password')
+                        <div class="text-red-600">{{ $message }}</div>
+                        @enderror
                     </div>
 
-
-
-
-
-                    <div class="flex items-start mt-3 mx-2">
-                        <div class="flex items-start ">
+                    <div class="flex items-start mt-2">
+                        <div class="flex items-start">
                             <div class="flex items-center h-5">
                                 <input id="remember" type="checkbox" value=""
                                     class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300">
@@ -70,41 +59,15 @@
                         <a href="#" class="ml-auto text-sm text-blue-700 hover:underline ">Lost Password?</a>
                     </div>
 
-                    <a href="{{url('/dashboard')}}">
-                        <button type="button"
-                            class="w-full block bg-[#191C32]  text-white font-semibold rounded-3xl px-4 py-3 mt-6 mb-2">
-                            Log In
-                        </button>
-                    </a>
+                    <button type="submit"
+                        class="w-full block bg-purple-500 hover:bg-purple-400 focus:bg-purple-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+                        Log In
+                    </button>
                 </form>
 
-                {{-- <div class="flex justify-evenly items-center">
-                    <div class="">
-                        <img class="w-72" src="{{asset('img/google-icon.png')}}" alt="">
+                <hr class="my-6 border-gray-300 w-full">
 
-
-                    </div>
-                    <div>
-                        <img class="w-72" src="{{asset('img/fb-icon.png')}}" alt="">
-
-
-                    </div>
-                    <div>
-                        <img class="w-72" src="{{asset('img/apple-icon.png')}}" alt="">
-                    </div>
-
-
-                </div> --}}
-
-                <div class="inline-flex justify-center mx-auto">
-                    <img class="ml-10 md:ml-0" src="{{asset('img/google-icon.png')}}" alt="">
-                    <img class="-mx-24" src="{{asset('img/fb-icon.png')}}" alt="">
-                    <img class="" src="{{asset('img/apple-icon.png')}}" alt="">
-                </div>
-
-
-
-                {{-- <a href="{{url('auth/redirect')}}"
+                <a href="{{url('auth/redirect')}}"
                     class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
                     <div class="flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" x="0px" y="0px" viewBox="0 0 48 48"
@@ -130,10 +93,16 @@
                         </svg>
                         <span class="ml-4">Log in with Google</span>
                     </div>
-                </a> --}}
+                </a>
             </div>
         </div>
+
+        <div class=" hidden lg:block w-full md:w1/2 xl:w-2/3 h-screen">
+            <div id="robot" class="w-[660px] ml-40 "></div>
+        </div>
     </section>
+
+
 
 
 
@@ -142,11 +111,11 @@
 
     <script>
         var animation = bodymovin.loadAnimation({
-        container: document.getElementById('login'),
+        container: document.getElementById('robot'),
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '{{asset('lottie/39701-robot-bot-3d.json')}}'
+        path: '{{asset('lottie/38435-register.json')}}'
       })
     </script>
 
@@ -156,9 +125,10 @@
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '{{asset('lottie/107385-login.json')}}'
+    path: '{{asset('lottie/39701-robot-bot-3d.json')}}'
   })
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>

@@ -66,12 +66,11 @@
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
           {{-- <img src="{{asset('img/logo.png')}}" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> --}}
-          <p class="text-4xl font-bold text-[#F2994A]">TeamUp</p>
+          <p class="text-4xl font-bold text-blue-700">TeamUp</p>
         </a>
         <div class="flex md:order-2">
           <button type="button"
-            class="text-white bg-[#F2994A] hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 "><a
-              href="{{url('/login')}}">Login</a></button>
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button>
           <button data-collapse-toggle="navbar-sticky" type="button"
             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="navbar-sticky" aria-expanded="false">
@@ -121,7 +120,7 @@
           <div class="mx-auto max-w-xl text-center">
             <h1 class="text-3xl font-extrabold sm:text-5xl">
               Membuat Tim Freelance
-              <strong class="font-extrabold text-red-700 sm:block">
+              <strong class="font-extrabold  sm:block">
                 Mudah dan Efektif untuk Semua!
               </strong>
             </h1>
@@ -132,12 +131,12 @@
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a class="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+              <a class="block w-full rounded  bg-blue-700 hover:bg-blue-800 px-12 py-3 text-sm font-medium text-white shadow  focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
                 href="/get-started">
                 Get Started
               </a>
 
-              <a class="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
+              <a class="block w-full rounded px-12 py-3 text-sm font-medium text-blue-700 shadow hover:text-blue-800 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
                 href="/about">
                 Learn More
               </a>
@@ -167,12 +166,12 @@
 
 
   {{-- carousel companies --}}
-  <div class="bg-sky-50">
+  <div class="">
     {{-- carousel companies --}}
-    <section id="" class="z-0 bg-sky-50">
+    <section id="" class="z-0 ">
       <div class="pt-10  ">
         <h5 class=" px-20  text-center font-light font-poppins lg:text-xl text-bold">Join Most Well Known <span
-            class="text-[#F2994A] ">Companies</span> Around The World</h5>
+            class="text-blue-700 ">Companies</span> Around The World</h5>
       </div>
       <div id="animation-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -269,14 +268,14 @@
     <section id="kategori">
       <div class="pb-9 ">
         <h5 class="text-center font-poppins pt-10 ">Choose Categories</h5>
-        <h3 class="text-center font-bold font-poppins pb-4 text-3xl text-[#F2994A]">Choose Categories</h3>
+        <h3 class="text-center font-bold font-poppins pb-4 text-3xl text-blue-700">Choose Categories</h3>
 
         {{-- swiper mobile --}}
         <div class="swiper mySwiper md:hidden lg:hidden">
           <div class="swiper-wrapper sm:mb-5">
             <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class="bg-gray-50 text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-12 sm:pt-8">
                   <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
                   <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
@@ -286,7 +285,7 @@
                 </div>
               </div>
               <div
-                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-6 ">
                   <div>
                     <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
@@ -304,7 +303,7 @@
 
             <div class="swiper-slide sm:flex  sm:justify-items-center ">
               <div
-                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-12 sm:pt-8">
                   <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
                   <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
@@ -314,7 +313,7 @@
                 </div>
               </div>
               <div
-                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-6 ">
                   <div>
                     <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
@@ -332,7 +331,7 @@
 
             <div class="swiper-slide sm:flex  sm:justify-items-center sm:mx-[15%]">
               <div
-                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-12 sm:pt-8">
                   <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
                   <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
@@ -342,7 +341,7 @@
                 </div>
               </div>
               <div
-                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-6 ">
                   <div>
                     <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
@@ -360,7 +359,7 @@
 
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
@@ -377,7 +376,7 @@
             </div>
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/finance.png')}}" width="120px" class="pl-4 sm:pl-4 " alt="">
@@ -393,7 +392,7 @@
             </div>
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/web.png')}}" width="90px" class="pl-4 sm:pl-4 " alt="">
@@ -409,7 +408,7 @@
             </div>
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/pm.png')}}" width="85px" class="pl-6 sm:pl-4 " alt="">
@@ -425,7 +424,7 @@
             </div>
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/bisnis.png')}}" width="100px" class="pl-4 sm:pl-4 " alt="">
@@ -441,7 +440,7 @@
             </div>
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/grapik.png')}}" width="90px" class="pl-6 sm:pl-4 " alt="">
@@ -457,7 +456,7 @@
             </div>
             <div class="swiper-slide">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center  pt-10 sm:pt-8 ">
                   <div>
                     <img src="{{asset('img/video.png')}}" width="90px" class="pl-4 sm:pl-4 " alt="">
@@ -479,94 +478,94 @@
         {{-- versi SM-MD-LG --}}
         <div class="hidden sm:hidden md:flex sm:flex-wrap sm:justify-center sm:mx-3  ">
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
-              <div>
-                <img src="{{asset('img/pm.png')}}" width="85px" class="pl-6 sm:pl-4 " alt="">
+              <div id="project" class="w-20 ml-2">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
                   Management
                 </h3>
-                <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">87 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">87 Jobs Available</p>
               </div>
             </div>
           </div>
 
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center  pt-10 sm:pt-8 md:pt-6  xl:pt-5">
-              <div>
-                <img src="{{asset('img/video.png')}}" width="90px" class="pl-4 sm:pl-4 " alt="">
+              <div id="editor" class="w-20 ml-2">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Video <br>
                   Editor
                 </h3>
-                <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">120 Jobs Available</p>
               </div>
             </div>
           </div>
 
 
           <div
-            class="text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-10 ">
+            class="text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-10 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
-              <div>
-                <img src="{{asset('img/finance.png')}}" width="120px" class="pl-4 sm:pl-4 " alt="">
+              <div id="finance" class="w-32 -mt-5 ">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2">Finance
                   Management
                 </h3>
-                <p class="pl-2 text-[#828282] hover:text-[#F2F2F2]">230 Jobs Available</p>
+                <p class="pl-2 text-[#828282] ">230 Jobs Available</p>
               </div>
             </div>
           </div>
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5">
-              <div>
-                <img src="{{asset('img/web.png')}}" width="90px" class="pl-4 sm:pl-4 " alt="">
+              <div id="web" class="w-20 ml-2">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Web <br>
                   Development
                 </h3>
-                <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">100 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">100 Jobs Available</p>
               </div>
             </div>
           </div>
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5">
-              <div>
-                <img src="{{asset('img/grapik.png')}}" width="90px" class="pl-6 sm:pl-4 " alt="">
+              <div id="graphic" class="w-20 ml-2">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Graphic <br>
                   Designer
                 </h3>
-                <p class="pl-2 text-[#828282] hover:text-[#F2F2F2]">65 Jobs Available</p>
+                <p class="pl-2 text-[#828282] ">65 Jobs Available</p>
               </div>
             </div>
           </div>
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5">
-              <div>
-                <img src="{{asset('img/bisnis.png')}}" width="100px" class="pl-4 sm:pl-4 " alt="">
+              <div id="analytics" class="w-20 ml-2">
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Business &
                   Consulting
                 </h3>
-                <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">23 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">23 Jobs Available</p>
               </div>
             </div>
           </div>
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
               <div>
                 <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
@@ -575,12 +574,12 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
                   Design
                 </h3>
-                <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">120 Jobs Available</p>
               </div>
             </div>
           </div>
           <div
-            class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+            class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
               <div>
                 <img src="{{asset('img/marketing.png')}}" width="120px" class="pl-12 sm:pl-4 " alt="">
@@ -589,7 +588,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Marketing &
                   Communication
                 </h3>
-                <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
+                <p class="pl-4 text-[#828282] ">120 Jobs Available</p>
               </div>
             </div>
           </div>
@@ -1395,6 +1394,30 @@
     })
   </script>
 
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById('graphic'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '{{asset('lottie/38373-icon-graphic-designer.json')}}'
+  })
+  </script>
+
+
+
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById('web'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '{{asset('lottie/121574-web-development.json')}}'
+  })
+  </script>
+
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('lottie-home'),
@@ -1403,6 +1426,17 @@
     autoplay: true,
     path: '{{asset('lottie/133894-arrow-arc.json')}}'
   })
+  </script>
+
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+  container: document.getElementById('analytics'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '{{asset('lottie/68474-analytics.json')}}'
+})
   </script>
 
   <script>
@@ -1425,6 +1459,29 @@
 })
   </script>
 
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('project'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/64417-project-management.json')}}'
+})
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('finance'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/122848-graph.json')}}'
+})
+  </script>
+
+
+
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('lottie-home-laptop'),
@@ -1433,6 +1490,17 @@
     autoplay: true,
     path: '{{asset('lottie/63487-programming-computer.json')}}'
   })
+  </script>
+
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+  container: document.getElementById('editor'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '{{asset('lottie/70482-produccion-audiovisual.json')}}'
+})
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
