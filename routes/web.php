@@ -50,7 +50,7 @@ Route::get('/calendar', function () {
 });
 
 Route::get('/tim-list', function () {
-    return view('dashboard-user.all-team3');
+    return view('all-team3');
 });
 
 Route::get('/all-tim', function () {

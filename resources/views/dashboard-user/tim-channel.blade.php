@@ -48,7 +48,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body x-data="{mode:'leader', status:'Buka'}" class="overflow-y-hidden">
+<body x-data="{mode:'leader', status:'Buka'}" class="overflow-y-hidden bg-slate-100">
 
 
 
@@ -82,7 +82,7 @@
                                 Saya</a>
                         </li>
                         <li class="border-b">
-                            <a href="/myteam"
+                            <a href="/tim-saya"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 :hover:bg-gray-600 :text-gray-200 :hover:text-white">Tim
                                 Saya</a>
                         </li>
@@ -148,8 +148,8 @@
     <nav class="hidden md:block mx-20  border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="https://flowbite.com/" class="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap :text-white">Flowbite</span>
+
+                <span class="self-center text-xl font-semibold whitespace-nowrap :text-white">TeamUp</span>
             </a>
             <div class="flex md:order-2">
 
@@ -263,7 +263,7 @@
                             aria-current="page">Tim channel</a>
                     </li>
                     <li>
-                        <a href="/myteam"
+                        <a href="/tim-saya"
                             class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
                             Saya</a>
                     </li>
@@ -281,8 +281,8 @@
 
     <div class="xl:mx-10 xl:max-h-screen md:flex justify-between font-poppins ">
 
-        <div
-            class="bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] absolute top-10 sm:static from-sky-400 to-blue-800 p-2 md:p-4 rounded-2xl w-full h-[100vh] h-max-[100vh]  sm:w-full md:w-full  xl:max-h-[80vh] mt-5 shadow-2xl">
+        <div class="bg-white absolute top-10 sm:static from-sky-400 to-blue-800 p-2 md:p-4 rounded-2xl w-full h-[100vh] h-max-[100vh]  sm:w-full md:w-full  xl:max-h-[80vh] mt-5 "
+            style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
 
             <div class="mb-4 border-b border-gray-200  text-lg">
                 <ul class=" hidden sm:flex sm:flex-wrap -mb-px text-sm font-medium text-center" id="myTab"
@@ -472,19 +472,6 @@
                                             </div>
 
 
-                                            {{-- <label for="fileInput" type="button"
-                                                class="cursor-pointer inine-flex justify-between items-center focus:outline-none border py-2 px-4 rounded-lg shadow-sm text-left text-gray-600 bg-white hover:bg-gray-100 font-medium">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="inline-flex flex-shrink-0 w-6 h-6 -mt-1 mr-1"
-                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
-                                                    <path
-                                                        d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
-                                                    <circle cx="12" cy="13" r="3" />
-                                                </svg>
-                                                Browse Photo
-                                            </label> --}}
 
                                             <div class="mx-auto w-48 text-gray-500 text-xs text-center mt-5">Klik untuk
                                                 mengunggah logo</div>
@@ -570,9 +557,9 @@
                             </div>
 
                             <div class="md:mb-10 xl:mb-12">
-                                <p class="text-[#7D7777] mb-2 text-center text-sm font-normal">Dibuat oleh : Albert</p>
-                                <p class="text-[#7D7777] mb-2 text-center text-sm font-normal">Kategori : Web
-                                    Development</p>
+                                <p class="text-[#7D7777] text-center text-sm font-normal">Dibuat oleh : Albert</p>
+                                <p class="text-[#7D7777]  text-center text-sm font-normal">Kategori : Web Development
+                                </p>
                             </div>
 
                             <div class="flex shadow-md p-2 rounded-xl w-full text-center">
@@ -2513,7 +2500,7 @@
                                     </table>
 
                                     <div class="w-full bg-white rounded-lg p-2">
-                                        <canvas id="albert" class="w-full h-full min-h-[300px] max-h-[300px]"
+                                        <canvas id="albert2" class="w-full h-full min-h-[300px] max-h-[300px]"
                                             width="100%" height="100%"></canvas>
                                         {{-- <h1 class="text-center mb-2">Tugas</h1>
 
@@ -2849,8 +2836,7 @@
                                             <path fill-rule="evenodd"
                                                 d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                                                 clip-rule="evenodd"></path>
-                                        </svg>Cari Projek
-                                    </h5>
+                                        </svg>Cari Projek</h5>
                                     <button type="button" data-drawer-hide="drawer_projek" aria-controls="drawer_projek"
                                         class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center :hover:bg-gray-600 :hover:text-white">
                                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
@@ -4238,8 +4224,7 @@
                                                                 <path fill-rule="evenodd"
                                                                     d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
                                                                     clip-rule="evenodd"></path>
-                                                            </svg>Cari Tugas
-                                                        </h5>
+                                                            </svg>Cari Tugas</h5>
                                                         <button type="button" data-drawer-hide="drawer_tugas"
                                                             aria-controls="drawer_tugas"
                                                             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center :hover:bg-gray-600 :hover:text-white">
@@ -4286,7 +4271,7 @@
                                             <ul>
                                                 <li :class="active==1 ? 'border-2 border-blue-500' : ''"
                                                     @click="current_page = 1; window.innerWidth < 768 ? main_menu = false : main_menu = true; active=1"
-                                                    class="bg-white rounded-md shadow-md p-2 mb-3 cursor-pointer">
+                                                    class="bg-white cursor-pointer rounded-md shadow-md p-2 mb-3">
 
                                                     <div class="flex  items-center justify-between">
 
@@ -4321,7 +4306,7 @@
                                                 </li>
                                                 <li :class="active==2 ? 'border-2 border-blue-500' : ''"
                                                     @click="current_page = 2; window.innerWidth < 768 ? main_menu = false : main_menu = true; active=2"
-                                                    class="bg-white rounded-md shadow-md p-2 mb-3">
+                                                    class="bg-white cursor-pointer rounded-md shadow-md p-2 mb-3">
 
                                                     <div class="flex items-center justify-between">
 
@@ -4353,7 +4338,7 @@
                                                 </li>
                                                 <li :class="active==3 ? 'border-2 border-blue-500' : ''"
                                                     @click="current_page = 3; window.innerWidth < 768 ? main_menu = false : main_menu = true; active=3"
-                                                    class="bg-white rounded-md shadow-md p-2 mb-3">
+                                                    class="bg-white cursor-pointer rounded-md shadow-md p-2 mb-3">
                                                     <div class="flex items-center justify-between">
 
                                                         <div class="flex flex-col">
@@ -5913,6 +5898,7 @@
     let pelamar = document.getElementById('statistik_pelamar').getContext('2d');
     let member = document.getElementById('pelamar_statistik').getContext('2d');
     let albert = document.getElementById('albert').getContext('2d');
+    let albert2 = document.getElementById('albert2').getContext('2d');
     let myChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -6012,6 +5998,38 @@
         }
     });
     let chartAlbert = new Chart(albert, {
+        type: 'bar',
+        data: {
+            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'November', 'Desember'],
+            datasets: [{
+                label: 'Tugas 2023',
+                data: [12, 19, 3, 5, 2, 3, 5, 10, 20, 11, 23],
+                backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            // ...
+        }
+    });
+    let chartAlbert2 = new Chart(albert2, {
         type: 'bar',
         data: {
             labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'November', 'Desember'],
