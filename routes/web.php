@@ -18,7 +18,7 @@ Route::get('/form', function () {
 });
 
 Route::get('/', function () {
-    return view('landing.home');
+    return view('home');
 });
 
 Route::get('/landing', function () {

@@ -25,6 +25,11 @@
 
 <body x-data="{card_page:true, current_page:0, active:0, main_menu_lowongan:true, current_page_lowongan:0, active_lowongan:0}">
 
+    <div>
+        <p x-text="current_page"></p>
+        <p x-text="card_page"></p>
+        <p x-text="active"></p>
+    </div>
     <!-- Main modal -->
     <div id="modalTim" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
         <div class="relative w-full h-full top-10 max-w-2xl md:h-auto">
@@ -512,7 +517,7 @@ clip-rule="evenodd"></path>
 <!-- component -->
 
 <div x-show="card_page == true" class="flex mt-8 mx-2 justify-between lg:grid lg:grid-cols-3 lg:mx-24 gap-x-6 h-[42px] max-h-[42px] ">
-    <form class="flex hidden md:block w-[70%] md:w-[85%] items-center h-[42px]">
+    <form class="flex hidden md:block w-[70%] md:w-[70%] lg:w-[85%] items-center h-[42px]">
         <label for="simple-search" class="sr-only">Search</label>
         <div class="relative w-full">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -600,7 +605,7 @@ class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-
 
 </form>
 
-<select id="countries" class="hidden lg:block h-[42px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 :bg-gray-700 :border-gray-600 :placeholder-gray-400 :text-white :focus:ring-blue-500 :focus:border-blue-500">
+<select id="countries" class="hidden md:block md:w-[30%] lg:w-full h-[42px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 :bg-gray-700 :border-gray-600 :placeholder-gray-400 :text-white :focus:ring-blue-500 :focus:border-blue-500">
     <option selected>Semua Kategori</option>
     <option value="web">Web Development</option>
     <option value="mobile">Mobile Development</option>
@@ -608,12 +613,12 @@ class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-
     <option value="graphic">Graphic Design</option>
 </select>
 
-<div class="flex hidden sm:flex w-[30%] lg:w-[100%] justify-between">
+<div class="flex hidden md:flex w-[30%]  lg:w-[100%] justify-between">
     <button
-    class="w-[50%] hidden lg:block text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 :bg-gray-800 :text-white :border-gray-600 :hover:bg-gray-700 :hover:border-gray-600 :focus:ring-gray-700"
+    class="w-[50%] hidden md:block h-[42px] text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 :bg-gray-800 :text-white :border-gray-600 :hover:bg-gray-700 :hover:border-gray-600 :focus:ring-gray-700"
     type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example"
     data-drawer-placement="right" aria-controls="drawer-right-example">
-    Tambah Filter
+    Filter
 </button>
 
 <button type="button"
@@ -715,7 +720,7 @@ clip-rule="evenodd"></path>
                 
                 <ul class="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-col py-4" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     
-                    <li @click="current_page=1; window.innerWidth < 768 ? card_page = false : card_page = true; active=1" class="py-3 sm:py-2 px-2  xl:mr-5">
+                    <li @click="current_page=1; window.innerWidth < 1024 ? card_page = false : card_page = true; active=1" class="py-3 sm:py-2 px-2  xl:mr-5">
                         <div 
                         class="rounded-xl border-l-4 shadow-md border-blue-500 block pt-6 pb-6 pl-3 pr-3 bg-white  hover:bg-gray-100 :bg-gray-800 :border-gray-700 :hover:bg-gray-700">
                         <ul role="list" class="divide-y divide-gray-200 :divide-gray-700">

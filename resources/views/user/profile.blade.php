@@ -192,8 +192,8 @@ clip-rule="evenodd"></path>
                         <input type="text" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="linkedin" required="" value="charlie@gmail.com">
                     </div>
                     <div>
-                        <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone Number</label>
-                        <input type="text" id="number" name="phone_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="phone number" required="" value="08871522431">
+                        <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nomor Handphone</label>
+                        <input type="text" id="number" name="nomor" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="phone number" required="" value="08871522431">
                     </div>
                     <div>
                         <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Website</label>
