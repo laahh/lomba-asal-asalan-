@@ -35,26 +35,7 @@
 
   {{-- boxicon --}}
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <style>
-    @media (max-width:640px) {
-      .jumbotron {
-        /* background-color: red; */
-        background-image: none;
-        /* background-position-y: -300px; */
-      }
-    }
 
-    @media (min-width: 1024px) {
-      .jumbotron {
-        background-image: url("/assets/landing page/background.png");
-        background-size: cover;
-      }
-    }
-
-    #tes {
-      background-image: url("/assets/landing page/blender.png");
-    }
-  </style>
   <title>Teamup</title>
 </head>
 
@@ -153,8 +134,8 @@
     {{-- Isometric --}}
   </div>
 
-  <div id="lottie-home" class="absolute top-48 left-80 w-32"></div>
-  <div id="lottie-home-laptop" class="absolute right-10 bottom-10 w-72"></div>
+  <div id="lottie-home" class="hidden xl:block absolute top-48 left-80 w-32"></div>
+  <div id="lottie-home-laptop" class="absolute right-10 bottom-10 w-72 mt-10 xl:mt-0"></div>
 
   {{-- <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
     <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
@@ -275,13 +256,17 @@
           <div class="swiper-wrapper sm:mb-5">
             <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class="bg-gray-50 text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-12 sm:pt-8">
-                  <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
-                  <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
-                    Communication
-                  </h3>
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="project1" class="w-20 ml-2">
 
+                  </div>
+                  <div>
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
+                      Management
+                    </h3>
+                    <p class="pl-4 text-[#828282] ">87 Job tersedia</p>
+                  </div>
                 </div>
               </div>
               <div
@@ -600,19 +585,19 @@
 
 
   {{-- fiture 2 --}}
-  <section class="mx-20 overflow-hidden  sm:grid sm:grid-cols-2 mt-10">
-    <div id="member-lg" class="w-[700px] -ml-24 "></div>
+  <section class="md:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
+    <div id="member-lg" class="md:w-[700px] md:-ml-24 "></div>
     <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-xl text-center sm:text-left">
-        <h2 class="text-2xl font-bold text-gray-900 md:text-4xl">
+      <div class="md:mx-auto max-w-xl text-center sm:text-left">
+        <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
           Join Your Dream Team
         </h2>
 
-        <p class="text-xl  md:mt-4 md:block">
+        <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
           create your account as a member and choose your favorite team, get a project with your team, and grow with the
           team
         </p>
-        <div class=" text-xl text-center md:text-left">
+        <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
           <p class="  md:mt-4 md:block">
             <i class='bx bxs-badge-check'></i> Cari team sesuai keinginan
           </p>
@@ -628,7 +613,6 @@
           <p class="   md:block">
             <i class='bx bxs-badge-check'></i> Chat dengan tim dan project manager
           </p>
-
         </div>
 
         {{-- <button type="button"
@@ -653,18 +637,18 @@
 
   {{-- fiture 1 --}}
 
-  <section class="mx-20 overflow-hidden  sm:grid sm:grid-cols-2 mt-10">
+  <section class="md:first-letter:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
     <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="mx-auto max-w-xl text-center sm:text-left">
-        <h2 class="text-2xl font-bold text-gray-900 md:text-4xl">
+        <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
           Join Your Dream Team
         </h2>
 
-        <p class="text-xl  md:mt-4 md:block">
+        <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
           create your account as a member and choose your favorite team, get a project with your team, and grow with the
           team
         </p>
-        <div class=" text-xl text-center md:text-left">
+        <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
           <p class="  md:mt-4 md:block">
             <i class='bx bxs-badge-check'></i> Cari team sesuai keinginan
           </p>
@@ -696,7 +680,7 @@
       </div>
     </div>
 
-    <div id="leader" class="w-[800px] -ml-24"></div>
+    <div id="leader" class="xl:w-[800px] w-[500px] mx-auto xl:-ml-24"></div>
   </section>
 
 
@@ -1475,6 +1459,18 @@ path: '{{asset('lottie/106080-digital-marketing-or-promotion-in-app-animation.js
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('project'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/64417-project-management.json')}}'
+})
+  </script>
+
+
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('project1'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
