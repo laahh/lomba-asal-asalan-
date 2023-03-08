@@ -25,8 +25,8 @@
                 <p class="font-poppins">Start your website in seconds. Don’t have an account? <span
                         class="text-blue-600"><a href="{{url('/register')}}" class="text-decoration-none">Sign
                             up.</a></span> </p>
-                <form action="{{url('/login')}}" class="mt-6" method="post">
-                    @csrf
+                <div class="mt-6">
+
                     <div>
                         <label for="" class="block text-gray-700">Email Adress</label>
                         <input type="email" name="email" id="email" placeholder="Enter your email address"
@@ -59,11 +59,12 @@
                         <a href="#" class="ml-auto text-sm text-blue-700 hover:underline ">Lost Password?</a>
                     </div>
 
-                    <button type="submit"
-                        class="w-full block bg-purple-500 hover:bg-purple-400 focus:bg-purple-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
-                        Log In
-                    </button>
-                </form>
+                    <a href="/role"><button
+                            class="w-full block bg-purple-500 hover:bg-purple-400 focus:bg-purple-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+                            Log In
+                        </button></a>
+
+                </div>
 
                 <hr class="my-6 border-gray-300 w-full">
 

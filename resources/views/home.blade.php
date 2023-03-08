@@ -43,15 +43,16 @@
 
   <div class="relative ">
     {{-- navbar --}}
-    <nav class=" font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-20 top-0 left-0 border-gray-200 ">
+    <nav class="bg-gray-50 font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-20 top-0 left-0 border-gray-200 ">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
           {{-- <img src="{{asset('img/logo.png')}}" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> --}}
           <p class="text-4xl font-bold text-blue-700">TeamUp</p>
         </a>
         <div class="flex md:order-2">
-          <button type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button>
+          <a href="/login"><button type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button></a>
+
           <button data-collapse-toggle="navbar-sticky" type="button"
             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="navbar-sticky" aria-expanded="false">
@@ -81,11 +82,11 @@
                 class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Fitur</a>
             </li>
             <li>
-              <a href="#service"
-                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Service</a>
+              <a href="#testimoni"
+                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Testimoni</a>
             </li>
             <li>
-              <a href="{{url('/login')}}"
+              <a href="/tim-list"
                 class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Team
                 List</a>
             </li>
@@ -107,18 +108,17 @@
             </h1>
 
             <p class="mt-4 sm:text-xl sm:leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-              tenetur fuga ducimus numquam ea!
+              TeamUp membentuk tim freelance, cari dan rekrut untuk mahasiswa atau teamleader, sedia list job freelance.
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a class="block w-full rounded  bg-blue-700 hover:bg-blue-800 px-12 py-3 text-sm font-medium text-white shadow  focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-                href="/get-started">
+                href="/login">
                 Get Started
               </a>
 
               <a class="block w-full rounded px-12 py-3 text-sm font-medium text-blue-700 shadow hover:text-blue-800 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-                href="/about">
+                href="#create-profile">
                 Learn More
               </a>
             </div>
@@ -151,8 +151,8 @@
     {{-- carousel companies --}}
     <section id="" class="z-0 ">
       <div class="pt-10  ">
-        <h5 class=" px-20  text-center font-light font-poppins lg:text-xl text-bold">Join Most Well Known <span
-            class="text-blue-700 ">Companies</span> Around The World</h5>
+        <h5 class=" px-20  text-center font-light font-poppins lg:text-xl text-bold">Bergabunglah dengan Perusahaan
+          Paling Terkenal di Seluruh Dunia</h5>
       </div>
       <div id="animation-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -265,7 +265,7 @@
                     <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
                       Management
                     </h3>
-                    <p class="pl-4 text-[#828282] ">87 Job tersedia</p>
+                    <p class="pl-4 text-[#828282] ">87 tim tersedia</p>
                   </div>
                 </div>
               </div>
@@ -472,7 +472,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
                   Management
                 </h3>
-                <p class="pl-4 text-[#828282] ">87 Job tersedia</p>
+                <p class="pl-4 text-[#828282] ">87 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -487,7 +487,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Video <br>
                   Editor
                 </h3>
-                <p class="pl-4 text-[#828282] ">120 Job tersedia</p>
+                <p class="pl-4 text-[#828282] ">120 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -503,7 +503,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2">Finance
                   Management
                 </h3>
-                <p class="pl-2 text-[#828282] ">230 Job tersedia</p>
+                <p class="pl-2 text-[#828282] ">230 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -517,7 +517,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Web <br>
                   Development
                 </h3>
-                <p class="pl-4 text-[#828282] ">100 Job tersedia</p>
+                <p class="pl-4 text-[#828282] ">100 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -531,7 +531,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Graphic <br>
                   Designer
                 </h3>
-                <p class="pl-2 text-[#828282] ">65 Job tersedia</p>
+                <p class="pl-2 text-[#828282] ">65 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -545,7 +545,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Business &
                   Consulting
                 </h3>
-                <p class="pl-4 text-[#828282] ">23 Job tersedia</p>
+                <p class="pl-4 text-[#828282] ">23 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -559,7 +559,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
                   Design
                 </h3>
-                <p class="pl-4 text-[#828282] ">120 Job tersedia</p>
+                <p class="pl-4 text-[#828282] ">120 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -573,7 +573,7 @@
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Marketing &
                   Communication
                 </h3>
-                <p class="pl-4 text-[#828282] ">120 Job tersedia</p>
+                <p class="pl-4 text-[#828282] ">120 tim tersedia</p>
               </div>
             </div>
           </div>
@@ -585,7 +585,7 @@
 
 
   {{-- fiture 2 --}}
-  <section class="md:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
+  <section id="create-profile" class="md:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
     <div id="member-lg" class="md:w-[700px] md:-ml-24 "></div>
     <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="md:mx-auto max-w-xl text-center sm:text-left">
@@ -594,8 +594,8 @@
         </h2>
 
         <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
-          create your account as a member and choose your favorite team, get a project with your team, and grow with the
-          team
+          buat akun Anda sebagai anggota dan pilih tim favorit Anda, dapatkan proyek dengan tim Anda, dan tumbuh bersama
+          tim
         </p>
         <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
           <p class="  md:mt-4 md:block">
@@ -641,7 +641,7 @@
     <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="mx-auto max-w-xl text-center sm:text-left">
         <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
-          Join Your Dream Team
+          Create Your Dream Team
         </h2>
 
         <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
@@ -650,19 +650,19 @@
         </p>
         <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
           <p class="  md:mt-4 md:block">
-            <i class='bx bxs-badge-check'></i> Cari team sesuai keinginan
+            <i class='bx bxs-badge-check'></i> Buat Tim sesuai keinginan
           </p>
           <p class="   md:block">
-            <i class='bx bxs-badge-check'></i> Daftarkan diri sebagai member
+            <i class='bx bxs-badge-check'></i> Rekrut member
           </p>
           <p class="   md:block">
-            <i class='bx bxs-badge-check'></i> Kerjakan project dengan tim
+            <i class='bx bxs-badge-check'></i> Buat project bersama tim
           </p>
           <p class="   md:block">
             <i class='bx bxs-badge-check'></i> Task dan deadline
           </p>
           <p class="   md:block">
-            <i class='bx bxs-badge-check'></i> Chat dengan tim dan project manager
+            <i class='bx bxs-badge-check'></i> Chat dengan tim dan member lain
           </p>
 
         </div>
@@ -690,7 +690,7 @@
 
 
 
-  <section class="bg-gray-100">
+  <section id="testimoni" class="bg-gray-100">
     <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0">
       <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
         <div class="max-w-xl text-center sm:text-left">
@@ -1550,6 +1550,22 @@ path: '{{asset('lottie/93152-ui-app-icon.json')}}'
         },
       })
     })
+  </script>
+
+
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    Swal.fire({
+  html:`<img src="{{asset('img/Petunjuk Penggunaan Website (2).png')}}" width="100%" class="pl-4 sm:pl-4 " alt="">`,
+  width:`1000px`,
+  showClass: {
+    popup: 'animate_animated animate_fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate_animated animate_fadeOutUp'
+  }
+})
   </script>
 </body>
 

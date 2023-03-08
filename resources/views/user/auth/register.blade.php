@@ -75,10 +75,11 @@
 
                     </div>
 
-                    <button type="submit"
-                        class="w-full block bg-purple-500 hover:bg-purple-400 focus:bg-purple-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
-                        sign up
-                    </button>
+                    <a href="/login"> <button type="submit"
+                            class="w-full block bg-purple-500 hover:bg-purple-400 focus:bg-purple-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
+                            sign up
+                        </button></a>
+
                 </form>
 
                 <hr class="my-6 border-gray-300 w-full">
