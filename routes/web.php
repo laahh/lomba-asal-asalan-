@@ -75,3 +75,7 @@ Route::get('/profile', function () {
 Route::get('/testing', function () {
     return view('admin.dashboard');
 });
+
+Route::get('/myteam', function () {
+    return view('dashboard-user.myteam');
+});
