@@ -76,6 +76,6 @@ Route::get('/testing', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/myteam', function () {
+Route::get('/tim-saya', function () {
     return view('dashboard-user.myteam');
 });
