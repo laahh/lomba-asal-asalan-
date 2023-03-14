@@ -10,6 +10,8 @@
         integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
     <title>Document</title>
 </head>
 
@@ -18,7 +20,7 @@
     <div>
 
         {{--Navbar MD LG XL--}}
-        <nav class="hidden md:block mx-20  border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
+        <nav class="hidden md:block mx-20 z-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="https://flowbite.com/" class="flex items-center">
 
@@ -26,7 +28,7 @@
                 </a>
                 <div class="flex md:order-2">
 
-                    <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+                    <button id="dropdownUserAvatarButton1" data-dropdown-toggle="dropdownAvatar1"
                         class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 :focus:ring-gray-600"
                         type="button">
                         <span class="sr-only">Open user menu</span>
@@ -34,7 +36,7 @@
                     </button>
 
                     <!-- Dropdown menu -->
-                    <div id="dropdownAvatar"
+                    <div id="dropdownAvatar1"
                         class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 :bg-gray-700 :divide-gray-600">
                         <div class="px-4 py-3 text-sm text-gray-900 :text-white">
                             <div>John Doe
@@ -42,7 +44,7 @@
                             <div class="font-medium truncate">john@gmail.com</div>
                         </div>
                         <ul class="py-2 text-sm text-gray-700 :text-gray-200"
-                            aria-labelledby="dropdownUserAvatarButton">
+                            aria-labelledby="dropdownUserAvatarButton1">
                             <li>
                                 <a href="/profile"
                                     class="block px-4 py-2 hover:bg-gray-100 :hover:bg-gray-600 :hover:text-white">Profil
@@ -119,9 +121,9 @@
                         </div>
                     </div>
 
-                    <button data-collapse-toggle="navbar-cta" type="button"
+                    <button data-collapse-toggle="navbar-cta1" type="button"
                         class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
-                        aria-controls="navbar-cta" aria-expanded="false">
+                        aria-controls="navbar-cta1" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +157,7 @@
 
                         <li class="">
 
-                            <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
+                            <button id="dropdownHelperRadioButton1" data-dropdown-toggle="dropdownHelperRadio1"
                                 class="block py-2 pl-6  pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
                                 type="button">Mode <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -164,12 +166,12 @@
                                 </svg></button>
 
                             <!-- Dropdown menu -->
-                            <div id="dropdownHelperRadio"
+                            <div id="dropdownHelperRadio1"
                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 :bg-gray-700 :divide-gray-600"
                                 data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top"
                                 style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
                                 <ul class="p-3 space-y-1 text-sm text-gray-700 :text-gray-200"
-                                    aria-labelledby="dropdownHelperRadioButton">
+                                    aria-labelledby="dropdownHelperRadioButton1">
 
                                     <li>
                                         <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
@@ -218,7 +220,7 @@
                 </div>
             </div>
         </nav>
-        <h1 class="pt-10 px-10 text-3xl">My Profile</h1>
+      
 
         {{-- @if (session('success'))
 
@@ -408,6 +410,7 @@
         });
       
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
 
 </html>

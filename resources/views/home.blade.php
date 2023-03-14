@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="scroll-smooth">
- 
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +11,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
-  <script type="text/javascript">
-    window.$crisp=[];window.CRISP_WEBSITE_ID="010c823a-9c5d-4acc-83ec-3d13eb623ef2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
-  </script>
+
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c07fece8-3bdd-450a-a477-ca31610ddeb3";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800&display=swap"
     rel="stylesheet">
- 
+
   <script src="https://cdn.tailwindcss.com"></script>
- 
- 
+
+
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
   {{--
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" /> --}}
@@ -32,15 +30,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   {{-- swiper --}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
- 
+
   {{-- boxicon --}}
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
- 
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
   <title>Teamup</title>
 </head>
- 
+
 <body class="">
- 
+
   <div class="relative ">
     {{-- navbar --}}
     <nav class="bg-gray-50 font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-20 top-0 left-0 border-gray-200 ">
@@ -51,8 +54,8 @@
         </a>
         <div class="flex md:order-2">
           <a href="/login"><button type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Login</button></a>
- 
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 :bg-blue-600 :hover:bg-blue-700 focus:outline-none :focus:ring-blue-800">Login</button></a>
+
           <button data-collapse-toggle="navbar-sticky" type="button"
             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="navbar-sticky" aria-expanded="false">
@@ -71,11 +74,11 @@
             <li>
               <a href="#home"
                 class="block  py-2 pr-4 pl-3 lg:text-base text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
-                aria-current="page">Home</a>
+                aria-current="page">Beranda</a>
             </li>
             <li>
               <a href="#kategori"
-                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Categori</a>
+                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Kategori</a>
             </li>
             <li>
               <a href="#create-profile"
@@ -94,64 +97,64 @@
         </div>
       </div>
     </nav>
- 
+
     {{-- Home --}}
     <section id="home" class="">
       <section class="bg-gray-50">
         <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div class="mx-auto max-w-xl text-center">
-            <h1 class="text-3xl font-extrabold sm:text-5xl">
+            <h1 class="text-3xl font-extrabold animate__animated animate__zoomIn sm:text-5xl">
               Membuat Tim Freelance
               <strong class="font-extrabold  sm:block">
                 Mudah dan Efektif untuk Semua!
               </strong>
             </h1>
- 
+
             <p class="mt-4 sm:text-xl sm:leading-relaxed">
               TeamUp membentuk tim freelance, cari dan rekrut untuk mahasiswa atau teamleader, sedia list job freelance.
             </p>
- 
+
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a class="block w-full rounded  bg-blue-700 hover:bg-blue-800 px-12 py-3 text-sm font-medium text-white shadow  focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+              <a class="block w-full rounded  bg-blue-500 hover:bg-blue-800 px-12 py-3 text-sm font-medium text-white shadow  focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
                 href="/login">
-                Get Started
+                Ayo Mulai
               </a>
- 
-              <a class="block w-full rounded px-12 py-3 text-sm font-medium text-blue-700 shadow hover:text-blue-800 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
+
+              {{-- <a class="block w-full rounded px-12 py-3 text-sm font-medium text-blue-700 shadow hover:text-blue-800 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
                 href="#create-profile">
                 Learn More
-              </a>
+              </a> --}}
             </div>
           </div>
         </div>
       </section>
- 
- 
- 
+
+
+
     </section>
- 
- 
+
+
     {{-- Isometric --}}
   </div>
- 
+
   <div id="lottie-home" class="hidden xl:block absolute top-48 left-80 w-32"></div>
   <div id="lottie-home-laptop" class="absolute right-10 bottom-10 w-72 mt-10 xl:mt-0"></div>
- 
+
   {{-- <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
     <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
   </section> --}}
   {{--
   <div id="tes" class="min-h-[600px] relative -top-64   bg-center bg-cover  scale-100">
- 
+
   </div> --}}
- 
- 
+
+
   {{-- carousel companies --}}
   <div class="">
     {{-- carousel companies --}}
     <section id="" class="z-0 ">
       <div class="pt-10  ">
-        <h5 class=" px-20  text-center font-light font-poppins lg:text-xl text-bold">Bergabunglah dengan Perusahaan
+        <h5 class=" px-20 mb-9  text-center font-light font-poppins lg:text-xl text-bold">Bergabunglah dengan Perusahaan
           Paling Terkenal di Seluruh Dunia</h5>
       </div>
       <div id="animation-carousel" class="relative" data-carousel="slide">
@@ -175,9 +178,9 @@
                 <img src="{{asset('img/airbnb.png')}}" class=" hidden sm:hidden md:block" alt="...">
               </div>
             </div>
- 
- 
- 
+
+
+
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-200 sm:mt-5  ease-linear absolute inset-0 transition-all transform"
@@ -197,9 +200,9 @@
                 <img src="{{asset('img/google.png')}}" class=" hidden sm:hidden md:block" alt="...">
               </div>
             </div>
- 
- 
- 
+
+
+
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
@@ -217,7 +220,7 @@
               class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
           </div>
           <!-- Item 6 -->
- 
+
         </div>
         <!-- Slider controls -->
         <button type="button"
@@ -225,7 +228,7 @@
           data-carousel-prev="">
           <span
             class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
- 
+
             <span class="sr-only">Previous</span>
           </span>
         </button>
@@ -243,14 +246,14 @@
         </button>
       </div>
     </section>
- 
- 
+
+
     {{-- categori --}}
     <section id="kategori">
       <div class="pb-9 ">
         <h5 class="text-center font-poppins pt-10 ">Choose Categories</h5>
         <h3 class="text-center font-bold font-poppins pb-4 text-3xl text-blue-700">Choose Categories</h3>
- 
+
         {{-- swiper mobile --}}
         <div class="swiper mySwiper md:hidden lg:hidden">
           <div class="swiper-wrapper sm:mb-5">
@@ -259,7 +262,7 @@
                 class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
                   <div id="project1" class="w-20 ml-2">
- 
+
                   </div>
                   <div>
                     <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
@@ -283,18 +286,22 @@
                   </div>
                 </div>
               </div>
- 
+
             </div>
- 
+
             <div class="swiper-slide sm:flex  sm:justify-items-center ">
               <div
-                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-12 sm:pt-8">
-                  <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
-                  <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
-                    Communication
-                  </h3>
- 
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="project1" class="w-20 ml-2">
+
+                  </div>
+                  <div>
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
+                      Management
+                    </h3>
+                    <p class="pl-4 text-[#828282] ">87 tim tersedia</p>
+                  </div>
                 </div>
               </div>
               <div
@@ -311,9 +318,9 @@
                   </div>
                 </div>
               </div>
- 
+
             </div>
- 
+
             <div class="swiper-slide sm:flex  sm:justify-items-center sm:mx-[15%]">
               <div
                 class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
@@ -322,7 +329,7 @@
                   <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
                     Communication
                   </h3>
- 
+
                 </div>
               </div>
               <div
@@ -339,9 +346,9 @@
                   </div>
                 </div>
               </div>
- 
+
             </div>
- 
+
             <div class="swiper-slide">
               <div
                 class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
@@ -357,7 +364,7 @@
                   </div>
                 </div>
               </div>
- 
+
             </div>
             <div class="swiper-slide">
               <div
@@ -458,15 +465,15 @@
           </div>
           <div class="swiper-pagination "></div>
         </div>
- 
- 
+
+
         {{-- versi SM-MD-LG --}}
         <div class="hidden sm:hidden md:flex sm:flex-wrap sm:justify-center sm:mx-3  ">
           <div
             class=" text-slate-700   transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
               <div id="project" class="w-20 ml-2">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
@@ -476,12 +483,12 @@
               </div>
             </div>
           </div>
- 
+
           <div
             class=" text-slate-700    transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center  pt-10 sm:pt-8 md:pt-6  xl:pt-5">
               <div id="editor" class="w-20 ml-2">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Video <br>
@@ -491,13 +498,13 @@
               </div>
             </div>
           </div>
- 
- 
+
+
           <div
             class="text-slate-700    transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-10 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
               <div id="finance" class="w-32 -mt-5 ">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2">Finance
@@ -511,7 +518,7 @@
             class=" text-slate-700    transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5">
               <div id="web" class="w-20 ml-2">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Web <br>
@@ -525,7 +532,7 @@
             class=" text-slate-700    transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5">
               <div id="graphic" class="w-20 ml-2">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Graphic <br>
@@ -539,7 +546,7 @@
             class=" text-slate-700    transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5">
               <div id="analytics" class="w-20 ml-2">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Business &
@@ -553,7 +560,7 @@
             class=" text-slate-700    transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
               <div id="ui" class="w-24">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
@@ -567,7 +574,7 @@
             class=" text-slate-700   transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
             <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
               <div id="com" class="w-24">
- 
+
               </div>
               <div>
                 <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Marketing &
@@ -581,72 +588,20 @@
       </div>
     </section>
   </div>
- 
- 
- 
+
+
+
   {{-- fiture 2 --}}
   <section id="create-profile" class="md:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
     <div id="member-lg" class="md:w-[700px] md:-ml-24 "></div>
     <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="md:mx-auto max-w-xl text-center sm:text-left">
         <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
-          Join Your Dream Team
+          Buatlah Tim Impianmu!
         </h2>
- 
+
         <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
-          buat akun Anda sebagai anggota dan pilih tim favorit Anda, dapatkan proyek dengan tim Anda, dan tumbuh bersama
-          tim
-        </p>
-        <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
-          <p class="  md:mt-4 md:block">
-            <i class='bx bxs-badge-check'></i> Cari team sesuai keinginan
-          </p>
-          <p class="  mt-1 md:block">
-            <i class='bx bxs-badge-check'></i> Daftarkan diri sebagai member
-          </p>
-          <p class=" mt-1  md:block">
-            <i class='bx bxs-badge-check'></i> Kerjakan project dengan tim
-          </p>
-          <p class=" mt-1  md:block">
-            <i class='bx bxs-badge-check'></i> Task dan deadline
-          </p>
-          <p class=" mt-1  md:block">
-            <i class='bx bxs-badge-check'></i> Chat dengan tim dan project manager
-          </p>
-        </div>
- 
-        {{-- <button type="button"
-          class="text-white lg:ml-20 xl:ml-32 mx-[30%] sm:mx-4 sm:ml-14 mt-2  bg-[#F2994A] hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-6 ">Create
-          Account</button> --}}
- 
-        <div class="mt-4 md:mt-8">
-          <a href="#"
-            class="inline-block rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400">
-            Create Account
-          </a>
-        </div>
-      </div>
-    </div>
- 
- 
-  </section>
- 
- 
- 
- 
- 
-  {{-- fiture 1 --}}
- 
-  <section class="md:first-letter:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
-    <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-xl text-center sm:text-left">
-        <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
-          Create Your Dream Team
-        </h2>
- 
-        <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
-          create your account as a member and choose your favorite team, get a project with your team, and grow with the
-          team
+          Buat akun Anda sebagai leader dan buat tim impianmu, manajemen tim Anda, dan dapatkan projek bersama tim.
         </p>
         <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
           <p class="  md:mt-4 md:block">
@@ -664,31 +619,84 @@
           <p class="  mt-1 md:block">
             <i class='bx bxs-badge-check'></i> Chat dengan tim dan member lain
           </p>
- 
+
         </div>
- 
+
         {{-- <button type="button"
           class="text-white lg:ml-20 xl:ml-32 mx-[30%] sm:mx-4 sm:ml-14 mt-2  bg-[#F2994A] hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-6 ">Create
           Account</button> --}}
- 
-        <div class=" md:mt-8">
-          <button type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Buat
-            Akun </button>
+
+        <div class="mt-4 md:mt-8">
+          <a href="#"
+            class="inline-block rounded-full bg-blue-500 px-12 py-3 text-sm font-medium text-white transition  focus:outline-none focus:ring focus:ring-yellow-400">
+            Buat Akun
+          </a>
         </div>
       </div>
     </div>
- 
+
+
+  </section>
+
+
+
+
+
+  {{-- fiture 1 --}}
+
+  <section class="md:first-letter:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
+    <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
+      <div class="mx-auto max-w-xl text-center sm:text-left">
+        <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
+          Gabung Ke Tim Impianmu!
+        </h2>
+
+        <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
+          Buat akun Anda sebagai member dan pilih tim favorit Anda, dapatkan proyek dengan tim Anda, dan tumbuh bersama
+          tim
+        </p>
+
+        <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
+          <p class="  md:mt-4 md:block">
+            <i class='bx bxs-badge-check'></i> Cari team sesuai keinginan
+          </p>
+          <p class="  mt-1 md:block">
+            <i class='bx bxs-badge-check'></i> Daftarkan diri sebagai member
+          </p>
+          <p class=" mt-1  md:block">
+            <i class='bx bxs-badge-check'></i> Kerjakan project dengan tim
+          </p>
+          <p class=" mt-1  md:block">
+            <i class='bx bxs-badge-check'></i> Task dan deadline
+          </p>
+          <p class=" mt-1  md:block">
+            <i class='bx bxs-badge-check'></i> Chat dengan tim dan project manager
+          </p>
+        </div>
+
+        {{-- <button type="button"
+          class="text-white lg:ml-20 xl:ml-32 mx-[30%] sm:mx-4 sm:ml-14 mt-2  bg-[#F2994A] hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-6 ">Create
+          Account</button> --}}
+
+        <div class=" md:mt-8">
+          <a href="#"
+            class="inline-block rounded-full bg-blue-500 px-12 py-3 text-sm font-medium text-white transition  focus:outline-none focus:ring focus:ring-yellow-400">
+            Buat Akun
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div id="leader" class="xl:w-[800px] w-[500px] mx-auto xl:-ml-24"></div>
   </section>
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
   <section id="testimoni" class="bg-gray-100">
     <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0">
       <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
@@ -696,14 +704,13 @@
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
             Testimoni dari para member dan leader
             <br class="hidden sm:block lg:hidden" />
- 
+
           </h2>
- 
+
           <p class="mt-4 text-gray-500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-            veritatis illo placeat harum porro optio fugit a culpa sunt id!
+            Testimoni dari para member dan leader yang telah bergabung di platform kami
           </p>
- 
+
           <div class="hidden lg:mt-8 lg:flex lg:gap-4">
             <button
               class="prev-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
@@ -713,7 +720,7 @@
                 <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
               </svg>
             </button>
- 
+
             <button
               class="next-button rounded-full border border-pink-600 p-3 text-pink-600 hover:bg-pink-600 hover:text-white">
               <span class="sr-only">Next Slide</span>
@@ -724,7 +731,7 @@
             </button>
           </div>
         </div>
- 
+
         <div class="-mx-6 lg:col-span-2 lg:mx-0">
           <div class="swiper-container !overflow-hidden">
             <div class="swiper-wrapper">
@@ -736,33 +743,33 @@
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     </div>
- 
+
                     <div class="mt-4">
                       <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
                         Stayin' Alive
                       </p>
- 
+
                       <p class="mt-4 leading-relaxed text-gray-500">
                         Website freelance ini sangat membantu saya dalam mencari proyek-proyek freelance baru. Selain
                         itu, saya juga mendapatkan banyak kesempatan untuk belajar dan berkembang bersama dengan tim
@@ -770,13 +777,13 @@
                       </p>
                     </div>
                   </div>
- 
+
                   <footer class="mt-8 text-sm text-gray-500">
                     &mdash; Ifa Aprillianto
                   </footer>
                 </blockquote>
               </div>
- 
+
               <div class="swiper-slide">
                 <blockquote class="flex h-full flex-col justify-between bg-white p-12">
                   <div>
@@ -785,33 +792,33 @@
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     </div>
- 
+
                     <div class="mt-4">
                       <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
                         Fitur Chat Grup
                       </p>
- 
+
                       <p class="mt-4 leading-relaxed text-gray-500">
                         Saya sangat senang dengan fitur grup chat yang disediakan oleh website freelance ini. Dengan
                         adanya grup chat, saya dapat berkomunikasi dengan tim dan klien dengan mudah dan cepat, sehingga
@@ -819,13 +826,13 @@
                       </p>
                     </div>
                   </div>
- 
+
                   <footer class="mt-8 text-sm text-gray-500">
                     &mdash; Deva Apriana
                   </footer>
                 </blockquote>
               </div>
- 
+
               <div class="swiper-slide">
                 <blockquote class="flex h-full flex-col justify-between bg-white p-12">
                   <div>
@@ -834,33 +841,33 @@
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
- 
+
                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     </div>
- 
+
                     <div class="mt-4">
                       <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
                         Timleader
                       </p>
- 
+
                       <p class="mt-4 leading-relaxed text-gray-500">
                         Sebagai timleader, saya sangat terbantu dengan adanya website freelance ini. Saya dapat dengan
                         mudah mencari anggota tim tambahan untuk proyek-proyek yang sedang kami kerjakan, dan
@@ -868,7 +875,7 @@
                       </p>
                     </div>
                   </div>
- 
+
                   <footer class="mt-8 text-sm text-gray-500">
                     &mdash; Budi, Timleader
                   </footer>
@@ -878,7 +885,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="mt-8 flex justify-center gap-4 lg:hidden">
         <button aria-label="Previous slide"
           class="prev-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
@@ -887,7 +894,7 @@
             <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
           </svg>
         </button>
- 
+
         <button aria-label="Next slide"
           class="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
           <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -897,26 +904,26 @@
       </div>
     </div>
   </section>
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
   <div class="text-center mt-24  mb-12">
-    <h1 class="  lg:text-3xl text-xs font-bold text-gray-700 dark:text-gray-200">Pertanyaan yang paling sering
+    <h1 class="  lg:text-3xl text-xs font-bold text-gray-700 :text-gray-200">Pertanyaan yang paling sering
       ditanyakan
     </h1>
-    <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quas.</p>
- 
+    <p class="mt-1"></p>
+
   </div>
   <div class="space-y-4 mx-10">
     <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
       <summary class="flex items-center justify-between cursor-pointer">
         <h2 class="text-lg font-medium text-gray-900">
-          Apa itu Freelance?
+          Apa Itu TeamUp
         </h2>
- 
+
         <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
@@ -927,21 +934,23 @@
           </svg>
         </span>
       </summary>
- 
+
       <p class="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
+        TeamUp adalah sebuah website yang dipergunakan untuk membentuk timfreelance, secara garis besar website ini
+        nantinya dipergunakan untuk mencari tim freelance bagi seorang mahasiswa / seseorang yang memutuhkan tim dan
+        digunakan untuk membuat tim bagi seseorang freelance yang sedang kebanjiran job (teamleader) dan dia ingin
+        merekrut tim, maka dia dapat membuka rekrutmen dengan berbagai ketentuan sesuai kebutuhan teamleader di website
+        TeamUp, dan nantinya di website TeamUp juga akan menyediakan list pekerjaan freelance yang diambil dari API
+        website freelance.com
       </p>
     </details>
- 
+
     <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
       <summary class="flex items-center justify-between cursor-pointer">
         <h2 class="text-lg font-medium text-gray-900">
-          Apakah saya bisa menjadi freelancer?
+          Apakah Saya Bisa Mendaftar Sebagai Anggota Team Freelance ?
         </h2>
- 
+
         <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
@@ -952,21 +961,20 @@
           </svg>
         </span>
       </summary>
- 
+
       <p class="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
+        Tentu saja, anda bisa mendaftar sebagai member di website TeamUp, dengan menjadi member anda bisa mencari
+        timfreelance yang sesuai dengan keahlian anda, dan anda juga bisa membuat timfreelance sendiri dengan
+        berbagai ketentuan yang anda inginkan.
       </p>
     </details>
- 
+
     <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
       <summary class="flex items-center justify-between cursor-pointer">
         <h2 class="text-lg font-medium text-gray-900">
-          Apa saya bisa join lebih dari satu proyek?
+          Apa Saya Bisa mendaftar sebagai TeamLeader ?
         </h2>
- 
+
         <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
@@ -977,21 +985,20 @@
           </svg>
         </span>
       </summary>
- 
+
       <p class="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
+        Tentu saja, anda bisa mendaftar sebagai teamleader di website TeamUp, dengan menjadi teamleader anda bisa
+        mencari timfreelance yang sesuai dengan keahlian anda, dan anda juga bisa membuat timfreelance sendiri dengan
+        berbagai ketentuan yang anda inginkan.
       </p>
     </details>
- 
+
     <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
       <summary class="flex items-center justify-between cursor-pointer">
         <h2 class="text-lg font-medium text-gray-900">
           Saya lulusan SMA, apakah saya bisa menjadi freelancer?
         </h2>
- 
+
         <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
           <svg xmlns="http://www.w3.org/2000/svg"
             class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
@@ -1002,55 +1009,31 @@
           </svg>
         </span>
       </summary>
- 
+
       <p class="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
+        Tentu saja, anda bisa menjadi freelancer, dengan menjadi freelancer anda bisa mencari timfreelance yang
+        sesuai dengan keahlian anda, dan anda juga bisa membuat timfreelance sendiri dengan berbagai ketentuan yang
+        anda inginkan.
       </p>
     </details>
- 
-    <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-      <summary class="flex items-center justify-between cursor-pointer">
-        <h2 class="text-lg font-medium text-gray-900">
-          Apakah peserta magang masih bisa mengikuti kegiatan perkuliahan di kampus selama pelaksanaan magang?
-        </h2>
- 
-        <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </summary>
- 
-      <p class="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
+
+
   </div>
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
   {{-- footer --}}
- 
+
   <footer aria-label="Site Footer" class="bg-white mt-20">
     <div class="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
           <div class="text-teal-600">
- 
+
             <path
               d="M37.83 19.2047C37.2352 19.237 36.6469 19.0679 36.16 18.7247C35.9566 18.5739 35.7929 18.3758 35.6831 18.1476C35.5733 17.9193 35.5208 17.6678 35.53 17.4147V8.1447C35.5252 8.1055 35.5293 8.0656 35.5422 8.0282C35.555 7.9908 35.5762 7.9569 35.6042 7.9289C35.6322 7.9009 35.6661 7.8797 35.7035 7.8669C35.7409 7.854 35.7808 7.8499 35.82 7.8547H37.5C37.69 7.8547 37.78 7.9547 37.78 8.1447V16.6947C37.78 17.0747 37.95 17.2647 38.3 17.2647C38.4484 17.2708 38.5968 17.254 38.74 17.2147C38.94 17.2147 39.05 17.2747 39.06 17.4547L39.21 18.7047C39.2172 18.7412 39.2165 18.7787 39.208 18.8149C39.1995 18.851 39.1833 18.885 39.1605 18.9143C39.1378 18.9437 39.109 18.9679 39.0762 18.9852C39.0433 19.0025 39.0071 19.0126 38.97 19.0147C38.602 19.1363 38.2175 19.2004 37.83 19.2047Z"
               fill="currentColor" />
@@ -1083,17 +1066,17 @@
               fill="currentColor" />
             </svg>
           </div>
- 
+
           <p class="max-w-xs mt-4 text-gray-500">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
-            cupiditate quae nam molestias.
+            teamup is a platform for teams to manage their projects, tasks and documents, communicate and plan their
+            work.
           </p>
- 
+
           <ul class="flex gap-6 mt-8">
             <li>
               <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                 <span class="sr-only">Facebook</span>
- 
+
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
@@ -1101,11 +1084,11 @@
                 </svg>
               </a>
             </li>
- 
+
             <li>
               <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                 <span class="sr-only">Instagram</span>
- 
+
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
@@ -1113,22 +1096,22 @@
                 </svg>
               </a>
             </li>
- 
+
             <li>
               <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                 <span class="sr-only">Twitter</span>
- 
+
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </a>
             </li>
- 
+
             <li>
               <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                 <span class="sr-only">GitHub</span>
- 
+
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
@@ -1136,11 +1119,11 @@
                 </svg>
               </a>
             </li>
- 
+
             <li>
               <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                 <span class="sr-only">Dribbble</span>
- 
+
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
@@ -1150,11 +1133,11 @@
             </li>
           </ul>
         </div>
- 
+
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
             <p class="font-medium text-gray-900">Services</p>
- 
+
             <nav aria-label="Footer Navigation - Services" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
@@ -1162,25 +1145,25 @@
                     1on1 Coaching
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Company Review
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Accounts Review
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     HR Consulting
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     SEO Optimisation
@@ -1189,10 +1172,10 @@
               </ul>
             </nav>
           </div>
- 
+
           <div>
             <p class="font-medium text-gray-900">Company</p>
- 
+
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
@@ -1200,13 +1183,13 @@
                     About
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Meet the Team
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Accounts Review
@@ -1215,10 +1198,10 @@
               </ul>
             </nav>
           </div>
- 
+
           <div>
             <p class="font-medium text-gray-900">Helpful Links</p>
- 
+
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
@@ -1226,13 +1209,13 @@
                     Contact
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     FAQs
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Live Chat
@@ -1241,10 +1224,10 @@
               </ul>
             </nav>
           </div>
- 
+
           <div>
             <p class="font-medium text-gray-900">Legal</p>
- 
+
             <nav aria-label="Footer Navigation - Legal" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
@@ -1252,19 +1235,19 @@
                     Accessibility
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Returns Policy
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Refund Policy
                   </a>
                 </li>
- 
+
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     Hiring Statistics
@@ -1275,28 +1258,28 @@
           </div>
         </div>
       </div>
- 
+
       <p class="text-xs text-gray-500">
         &copy; 2022. Company Name. All rights reserved.
       </p>
     </div>
   </footer>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   {{-- <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> --}}
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- 
+
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -1305,9 +1288,9 @@
       },
     });
   </script>
- 
+
   <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
- 
+
   <script type="importmap">
     {
       "imports": {
@@ -1365,7 +1348,7 @@
     }
     animate();
   </script> --}}
- 
+
   <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.5/build/player/lottie.min.js"></script>
   <script>
     var animation = bodymovin.loadAnimation({
@@ -1376,8 +1359,8 @@
       path: '{{asset('lottie/43392-marketing.json')}}'
     })
   </script>
- 
- 
+
+
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('graphic'),
@@ -1387,10 +1370,10 @@
     path: '{{asset('lottie/38373-icon-graphic-designer.json')}}'
   })
   </script>
- 
- 
- 
- 
+
+
+
+
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('web'),
@@ -1400,7 +1383,7 @@
     path: '{{asset('lottie/121574-web-development.json')}}'
   })
   </script>
- 
+
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('lottie-home'),
@@ -1410,8 +1393,8 @@
     path: '{{asset('lottie/133894-arrow-arc.json')}}'
   })
   </script>
- 
- 
+
+
   <script>
     var animation = bodymovin.loadAnimation({
   container: document.getElementById('analytics'),
@@ -1421,7 +1404,7 @@
   path: '{{asset('lottie/68474-analytics.json')}}'
 })
   </script>
- 
+
   <script>
     var animation = bodymovin.loadAnimation({
   container: document.getElementById('leader'),
@@ -1431,7 +1414,7 @@
   path: '{{asset('lottie/leader.json')}}'
 })
   </script>
- 
+
   <script>
     var animation = bodymovin.loadAnimation({
   container: document.getElementById('member-lg'),
@@ -1441,9 +1424,9 @@
   path: '{{asset('lottie/member.json')}}'
 })
   </script>
- 
- 
- 
+
+
+
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('com'),
@@ -1453,8 +1436,8 @@ autoplay: true,
 path: '{{asset('lottie/106080-digital-marketing-or-promotion-in-app-animation.json')}}'
 })
   </script>
- 
- 
+
+
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('project'),
@@ -1464,9 +1447,9 @@ autoplay: true,
 path: '{{asset('lottie/64417-project-management.json')}}'
 })
   </script>
- 
- 
- 
+
+
+
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('project1'),
@@ -1476,7 +1459,7 @@ autoplay: true,
 path: '{{asset('lottie/64417-project-management.json')}}'
 })
   </script>
- 
+
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('finance'),
@@ -1486,9 +1469,9 @@ autoplay: true,
 path: '{{asset('lottie/122848-graph.json')}}'
 })
   </script>
- 
- 
- 
+
+
+
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('lottie-home-laptop'),
@@ -1498,8 +1481,8 @@ path: '{{asset('lottie/122848-graph.json')}}'
     path: '{{asset('lottie/63487-programming-computer.json')}}'
   })
   </script>
- 
- 
+
+
   <script>
     var animation = bodymovin.loadAnimation({
   container: document.getElementById('editor'),
@@ -1509,7 +1492,7 @@ path: '{{asset('lottie/122848-graph.json')}}'
   path: '{{asset('lottie/70482-produccion-audiovisual.json')}}'
 })
   </script>
- 
+
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('ui'),
@@ -1519,11 +1502,11 @@ autoplay: true,
 path: '{{asset('lottie/93152-ui-app-icon.json')}}'
 })
   </script>
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
- 
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       new Swiper('.swiper-container', {
@@ -1550,11 +1533,11 @@ path: '{{asset('lottie/93152-ui-app-icon.json')}}'
       })
     })
   </script>
- 
- 
+
+
   <script src="sweetalert2.all.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
+  {{-- <script>
     Swal.fire({
   html:`<img src="{{asset('img/Petunjuk Penggunaan Website (2).png')}}" width="100%" class="pl-4 sm:pl-4 " alt="">`,
   width:`1000px`,
@@ -1565,7 +1548,7 @@ path: '{{asset('lottie/93152-ui-app-icon.json')}}'
     popup: 'animate_animated animate_fadeOutUp'
   }
 })
-  </script>
+  </script> --}}
 </body>
- 
+
 </html>

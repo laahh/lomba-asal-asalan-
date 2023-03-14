@@ -10,8 +10,8 @@
 
 <body class="bg-gray-50 font-poppins">
 
-  <div>
-    <h1 class="text-center text-4xl font-bold mt-10">Choose Role</h1>
+  <div class="mb-7">
+    <h1 class="text-center text-4xl font-bold mt-10">Pilih Role</h1>
     <p class="text-center px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, odit?</p>
   </div>
 
@@ -209,6 +209,21 @@
       </div>
     </div>
   </div>
+
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    Swal.fire({
+  html:`<img src="{{asset('img/Petunjuk Penggunaan Website (2).png')}}" width="100%" class="pl-4 sm:pl-4 " alt="">`,
+  width:`1000px`,
+  showClass: {
+    popup: 'animate_animated animate_fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate_animated animate_fadeOutUp'
+  }
+})
+  </script>
 
   <script>
     function setRoles(role){

@@ -677,7 +677,7 @@
 
 
     <div
-        class="flex hidden lg:flex my-3 items-center mx-24 justify-between mb-5 px-2 h-[100px] rounded-lg border-dashed border-2">
+        class="flex hidden bg-gray-50 lg:flex my-3 items-center mx-24 justify-between mb-5 px-2 h-[100px] rounded-lg border-dashed border-2">
         <h3 class="text-blue-700 text-3xl font-bold">Tim List</h3>
         <button type="button" data-modal-toggle="modalTim"
             class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">Buat
@@ -1244,7 +1244,7 @@
 
 
                             </div>
-                            <div :class="current_page_lowongan != 0 ? 'bg-white' : 'bg-gray-100'"
+                            <div :class="current_page_lowongan != 0 ? 'bg-white' : 'bg-gray-50'"
                                 class="order-1 sm:order-2 sm:w-1/2 scrollbar overflow-y-auto overflow-x-hidden h-fit max-h-full sm:h-full md:p-2  rounded-md">
 
                                 <div x-show="current_page_lowongan == 1"
@@ -2522,7 +2522,7 @@
 
                 </div>
                 <div x-show="current_page == 0"
-                    class="bg-gray-100 text-gray-300 flex justify-center items-center md:min-h-screen text-center rounded-md sm:mt-5 justify-start">
+                    class="bg-gray-50 text-gray-300 flex justify-center items-center md:min-h-screen text-center rounded-md sm:mt-5 justify-start">
                     <h1 class="">Klik salah satu tim</h1>
                 </div>
             </div>
