@@ -56,8 +56,8 @@
     <nav class="md:hidden lg:mx-20  border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
             <a href="https://flowbite.com/" class="flex items-center">
-                <img src="{{asset('assets/img/team-4.jpg')}}" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap :text-white">Flowbite</span>
+                <img src="{{asset('assets/img/logos/logo.png')}}" class="h-9 mr-3 sm:h-9" alt="TeamUp Logo" />
+                {{-- <span class="self-center text-xl font-semibold whitespace-nowrap :text-white">Flowbite</span> --}}
             </a>
 
             {{-- <div>
@@ -129,7 +129,7 @@
                     id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
                     data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+                    <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-4.jpg')}}" alt="user photo">
                 </button>
                 <!-- Dropdown menu -->
                 <div class="z-50  bg-white hidden my-4 text-base list-none  divide-y divide-gray-100 rounded-lg shadow :bg-gray-700 :divide-gray-600"
@@ -209,12 +209,12 @@
     </nav>
 
     {{--Navbar MD LG XL--}}
-    <nav class="hidden md:block mx-20  border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
+    <nav class="mb-8 hidden md:block mx-20  border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
-            <a href="https://flowbite.com/" class="flex items-center">
-
-                <span class="self-center text-xl font-semibold whitespace-nowrap :text-white">TeamUp</span>
-            </a>
+            <a href="/" class="flex items-center">
+                <img src="{{asset('assets/img/logos/logo.png')}}" class=" h-9 sm:h-9" alt="TeamUp Logo">
+                <p class="text-2xl font-bold text-blue-500">TeamUp</p>
+              </a>
             <div class="flex md:order-2">
 
                 <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
@@ -239,65 +239,7 @@
                                 Saya</a>
                         </li>
 
-                        {{-- <li class="px-4">
-
-                            <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
-                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-4 py-2.5 text-center inline-flex items-center :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800"
-                                type="button">Mode <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg></button>
-
-                            <!-- Dropdown menu -->
-                            <div id="dropdownHelperRadio"
-                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 :bg-gray-700 :divide-gray-600"
-                                data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top"
-                                style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
-                                <ul class="p-3 space-y-1 text-sm text-gray-700 :text-gray-200"
-                                    aria-labelledby="dropdownHelperRadioButton">
-
-                                    <li>
-                                        <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
-                                            <div class="flex items-center h-5">
-                                                <input x-on:change="mode='leader'" id="helper-radio-4" name="mode"
-                                                    type="radio" :checked="mode=='leader' ? true : false" value="leader"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
-                                            </div>
-                                            <div class="ml-2 text-sm">
-                                                <label for="helper-radio-4"
-                                                    class="font-medium text-gray-900 :text-gray-300">
-                                                    <div>Leader</div>
-                                                    <p id="helper-radio-text-4"
-                                                        class="text-xs font-normal text-gray-500 :text-gray-300">tombol
-                                                        edit, hapus, tambah dan status tim terlihat</p>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
-                                            <div class="flex items-center h-5">
-                                                <input id="helper-radio-5" x-on:change="mode='member'" name="mode"
-                                                    type="radio" :checked="mode=='member' ? true : false" value="member"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
-                                            </div>
-                                            <div class="ml-2 text-sm">
-                                                <label for="helper-radio-5"
-                                                    class="font-medium text-gray-900 :text-gray-300">
-                                                    <div>Member</div>
-                                                    <p id="helper-radio-text-5"
-                                                        class="text-xs font-normal text-gray-500 :text-gray-300">tombol
-                                                        edit, hapus, tambah dan status tim tidak terlihat</p>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </li> --}}
+            
                     </ul>
                     <div class="py-2">
                         <a href="#"
@@ -319,35 +261,38 @@
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                 <ul
-                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  :bg-gray-800 md::bg-gray-900 :border-gray-700">
+                    class="flex flex-col p-4 mt-4 items-center border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0  :bg-gray-800 md::bg-gray-900 :border-gray-700">
+
+                    {{-- <li>
+                        <a href="/tim-channel"
+                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 :text-white"
+                            aria-current="page">Tim channel</a>
+                    </li> --}}
 
                     <li>
                         <a href="/tim-channel"
-                            class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 :text-white"
-                            aria-current="page">Tim channel</a>
+                            class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:text-blue-700 md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
+                            Channel</a>
                     </li>
+                    
                     <li>
-                        <a href="/myteam"
-                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
-                            Saya</a>
+                        <a href="/tim-saya"
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                        aria-current="page">Tim Saya</a>
                     </li>
+                    
                     <li>
                         <a href="/tim-list"
                             class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
                             List</a>
                     </li>
-
-
+                    
 
                     <li class="">
 
                         <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
-                            class="block py-2 pl-6  pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
-                            type="button">Mode <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg></button>
+                            class=" text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                            type="button">Mode</button>
 
                         <!-- Dropdown menu -->
                         <div id="dropdownHelperRadio"
@@ -2194,17 +2139,7 @@
                                                                         </div>
                                                                         <div class="flex">
                                                                             <p class="text-sm xl:mx-2 leading-7 font-poppins text-[#7D7777] :text-gray-400 text-justify"
-                                                                                id="description_team">Lorem ipsum, dolor
-                                                                                sit amet consectetur adipisicing elit.
-                                                                                Qui aliquam consequatur repudiandae,
-                                                                                facilis dignissimos illo quod? Soluta
-                                                                                nobis ipsa illum exercitationem numquam
-                                                                                ipsum. Aut voluptatum necessitatibus
-                                                                                pariatur debitis porro aliquid vel,
-                                                                                obcaecati est placeat adipisci iure vero
-                                                                                deserunt soluta ratione facere similique
-                                                                                quod. Hic ea sint aperiam natus dolore
-                                                                                sed?</p>
+                                                                                id="description_team">Setelah mempertimbangkan segala faktor dengan matang, saya memutuskan untuk mengajukan permohonan pengunduran diri dari Tim Connect Technology. Saya ingin menyampaikan terima kasih saya yang sebesar-besarnya atas kesempatan yang diberikan untuk bekerja di perusahaan ini</p>
                                                                         </div>
                                                                     </div>
                                                                     <div
@@ -4192,15 +4127,7 @@
                                 <div class="p-6 overflow-auto space-y-6">
                                     <div id='calendar' class=""></div>
                                 </div>
-                                <!-- Modal footer -->
-                                <div
-                                    class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b :border-gray-600">
-                                    <button data-modal-hide="defaultModal" type="button"
-                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">I
-                                        accept</button>
-                                    <button data-modal-hide="defaultModal" type="button"
-                                        class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 :bg-gray-700 :text-gray-300 :border-gray-500 :hover:text-white :hover:bg-gray-600 :focus:ring-gray-600">Decline</button>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -4531,7 +4458,7 @@
 
                                                     <button
                                                         class="relative inline-flex items-center justify-center -mt-1  overflow-hidden text-sm font-medium rounded-lg"
-                                                        onclick="deleteRequirement(1)" type="button">
+                                                        onclick="swall()" type="button">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24"
                                                             style="fill: rgb(255, 50, 50);transform: ;msFilter:;">
@@ -4545,8 +4472,6 @@
 
                                                 <h1 class="text-center mb-2 text-[#313131] text-lg font-semibold pt-2">
                                                     Menyusun SRS</h1>
-
-
                                                 <div>
                                                     <div class="mb-2">
                                                         <p class="text-sm xl:mx-2 leading-7 font-poppins text-[#7D7777] :text-gray-400 text-justify"
@@ -5079,30 +5004,21 @@
         <div class="relative hidden xl:w-[30%] xl:block ml-6 bg-gray-100  rounded-2xl xl:mt-5 xl:shadow-2xl">
 
             <div class="absolute top-0 w-full  bg-white border-b rounded-t-2xl">
-                <h1 class="text-center text-sm mt-2 mb-3 font-poppins font-semibold">Chat Tim</h1>
-                <div class="flex mb-3 justify-center items-center">
-                    <div class="relative">
-                        <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-1.jpg')}}" alt="">
-                        <span
-                            class="top-0 left-5 absolute  w-2.5 h-2.5 bg-green-400 border-2 border-white :border-gray-800 rounded-full"></span>
+                <h1 class="text-center text-sm mt-2 mb-1 font-poppins font-semibold">Chat Tim</h1>
+                <div class="flex justify-center items-center mb-1">
+
+                    <div class="flex -space-x-4">
+                        <img class="w-9 h-9 border-2 border-white rounded-full :border-gray-800"
+                            src="{{asset('assets/img/team-1.jpg')}}" alt="">
+                        <img class="w-9 h-9 border-2 border-white rounded-full :border-gray-800"
+                            src="{{asset('assets/img/team-2.jpg')}}" alt="">
+                        <img class="w-9 h-9 border-2 border-white rounded-full :border-gray-800"
+                            src="{{asset('assets/img/team-4.jpg')}}" alt="">
+                        <img class="w-9 h-9 border-2 border-white rounded-full :border-gray-800"
+                            src="{{asset('assets/img/team-3.jpg')}}" alt="">
+                            <a class="flex items-center justify-center w-9 h-9 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 :border-gray-800" href="#">+99</a>
                     </div>
-                    <div class="relative">
-                        <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-2.jpg')}}" alt="">
-                        <span
-                            class="top-0 left-5 absolute  w-2.5 h-2.5 bg-green-400 border-2 border-white :border-gray-800 rounded-full"></span>
-                    </div>
-                    <div class="relative">
-                        <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-3.jpg')}}" alt="">
-                        <span
-                            class="top-0 left-5 absolute  w-2.5 h-2.5 bg-green-400 border-2 border-white :border-gray-800 rounded-full"></span>
-                    </div>
-                    <div class="relative">
-                        <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-4.jpg')}}" alt="">
-                        <span
-                            class="top-0 left-5 absolute  w-2.5 h-2.5 bg-green-400 border-2 border-white :border-gray-800 rounded-full"></span>
-                    </div>
-                    <a class="flex items-center justify-center w-9 h-9 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 :border-gray-800"
-                        href="#">+10</a>
+
                 </div>
             </div>
 

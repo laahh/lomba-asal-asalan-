@@ -18,18 +18,17 @@
             class="bg-white  w-full md:max-w-md lg:max-w-full md:mx-auto md:my-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
             <div class="w-full h-100">
                 {{-- <img src="{{asset('img/logo.png')}}" width="" class="mr-3 mt-10 sm:h-9" alt="Flowbite Logo"> --}}
-                <p class="text-4xl font-bold text-blue-700">TeamUp</p>
-                <h1 class="text-4xl mt-3 font-bold font-poppins">
-                    Welcome back
+                {{-- <p class="text-4xl font-bold text-blue-700">TeamUp</p> --}}
+                <h1 class="text-4xl mt-3 font-bold font-poppins text-blue-500">
+                    Login,
                 </h1>
-                <p class="font-poppins">Start your website in seconds. Don’t have an account? <span
-                        class="text-blue-600"><a href="{{url('/register')}}" class="text-decoration-none">Sign
-                            up.</a></span> </p>
+                <p class="font-poppins">Mulai situs web Anda dalam hitungan detik. Belum punya akun? <span
+                        class="text-blue-600"><a href="{{url('/register')}}" class="text-decoration-none">daftar</a></span> </p>
                 <div class="mt-6">
 
                     <div>
-                        <label for="" class="block text-gray-700">Email Adress</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                        <label for="" class="block text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Masukan Email"
                             class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
                         @error('email')
@@ -39,8 +38,7 @@
 
                     <div class="mt-4">
                         <label for="" class="block text-gray-700">Password</label>
-                        <input type="password" name="password" id="email" placeholder="Enter your password"
-                            minlength="6"
+                        <input type="password" name="password" id="email" placeholder="Masukan Password" minlength="6"
                             class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
                         @error('password')
@@ -54,9 +52,9 @@
                                 <input id="remember" type="checkbox" value=""
                                     class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300">
                             </div>
-                            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">Remember me</label>
+                            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">Ingat Saya</label>
                         </div>
-                        <a href="#" class="ml-auto text-sm text-blue-700 hover:underline ">Lost Password?</a>
+                        <a href="#" class="ml-auto text-sm text-blue-700 hover:underline ">Lupa Password?</a>
                     </div>
 
                     <a href="/role"><button
@@ -68,7 +66,7 @@
 
                 <hr class="my-6 border-gray-300 w-full">
 
-                <a href="{{url('auth/redirect')}}"
+                <a href="/login"
                     class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
                     <div class="flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" x="0px" y="0px" viewBox="0 0 48 48"
@@ -92,7 +90,7 @@
                                 d="M9.2,10.6c-1.1,1.2-2.1,2.6-2.9,4.1l3.9,2.9l2.6,1.9c0.6-1.6,1.6-3,2.8-4.1L9.2,10.6z">
                             </path>
                         </svg>
-                        <span class="ml-4">Log in with Google</span>
+                        <span class="ml-4">Gunakan Akun Google</span>
                     </div>
                 </a>
             </div>

@@ -10,24 +10,23 @@
 </head>
 
 <body class="font-poppins">
-    <section class="flex flex-col md:flex-row h-screen items-center">
+    <section class="flex flex-col mt-4 md:flex-row h-screen items-center">
         <div
             class="bg-white w-full md:max-w-md lg:max-w-full md:mx-auto md:my-auto md:w-1/2 xl:w-1/3 h-screen px-6 lg:px-16 xl:px-12 flex items-center justify-center">
             <div class="w-full h-100">
 
-                <h1 class="text-4xl mt-4 font-bold text-blue-700">
-                    Register
+                <h1 class="text-4xl mt-4 font-bold text-blue-500">
+                    Daftar
                 </h1>
 
-                <p class="font-poppins mt-1">Already have an account? <span class="text-blue-600"> <a
+                <p class="font-poppins mt-1">Sudah memiliki akun? <span class="text-blue-600"> <a
                             href="{{url('/login')}}" class="text-decoration-none">Login.</a></span> </p>
 
-                <form action="{{url('/register')}}" class="mt-3" method="post">
-                    @csrf
-
+                
+                    
                     <div>
-                        <label for="name" class="block text-gray-700">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your Name"
+                        <label for="name" class="block text-gray-700">Nama</label>
+                        <input type="text" name="name" id="name" placeholder="Masukan Nama Anda"
                             class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
                         @error('name')
@@ -35,8 +34,8 @@
                         @enderror
                     </div>
                     <div class="mt-4">
-                        <label for="email" class="block text-gray-700">Email Adress</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Masukan Email Anda"
                             class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
 
@@ -44,7 +43,7 @@
 
                     <div class="mt-4">
                         <label for="password" class="block text-gray-700">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password"
+                        <input type="password" name="password" id="password" placeholder="Masukan Password Anda"
                             minlength="6"
                             class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
@@ -54,9 +53,9 @@
                     </div>
 
                     <div class="mt-4">
-                        <label for="password_confirmation" class="block text-gray-700">Password Confirmation</label>
+                        <label for="password_confirmation" class="block text-gray-700">Konfirmasi Password</label>
                         <input type="password" name="password_confirmation" id="password_confirmation"
-                            placeholder="Enter your password" minlength="6"
+                            placeholder="Masukan Password Anda" minlength="6"
                             class="w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-purple-500 focus:bg-white focus:outline-none"
                             autofocus autocomplete required>
                         @error('password_confirmation')
@@ -70,17 +69,15 @@
                                 <input id="remember" type="checkbox" value=""
                                     class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300">
                             </div>
-                            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">Remember me</label>
+                            <label for="remember" class="ml-2 text-sm font-medium text-gray-900 ">Ingat Saya</label>
                         </div>
 
                     </div>
 
                     <a href="/login"> <button type="submit"
                             class="w-full block bg-purple-500 hover:bg-purple-400 focus:bg-purple-400 text-white font-semibold rounded-lg px-4 py-3 mt-6">
-                            sign up
+                            Daftar
                         </button></a>
-
-                </form>
 
                 <hr class="my-6 border-gray-300 w-full">
 
@@ -108,7 +105,7 @@
                                 d="M9.2,10.6c-1.1,1.2-2.1,2.6-2.9,4.1l3.9,2.9l2.6,1.9c0.6-1.6,1.6-3,2.8-4.1L9.2,10.6z">
                             </path>
                         </svg>
-                        <span class="ml-4">sign up with Google</span>
+                        <span class="ml-4">Gunakan Akun Google</span>
                     </div>
                 </button>
             </div>

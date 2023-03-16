@@ -39,22 +39,24 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <title>Teamup</title>
 </head>
 
-<body class="">
+<body class="overflow-x-hidden">
 
   <div class="relative ">
     {{-- navbar --}}
-    <nav class="bg-gray-50 font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-20 top-0 left-0 border-gray-200 ">
+    <nav class="bg-gray-50 font-poppins px-3 sm:px-4  py-2.5  fixed w-full z-30 top-0 left-0 border-gray-200 ">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="https://flowbite.com/" class="flex items-center">
-          {{-- <img src="{{asset('img/logo.png')}}" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> --}}
-          <p class="text-4xl font-bold text-blue-700">TeamUp</p>
+        <a href="/" class="flex items-center">
+          <img src="{{asset('assets/img/logos/logo.png')}}" class="mr-1 h-9 sm:h-9" alt="TeamUp Logo">
+          <p class="text-2xl font-bold text-blue-500">TeamUp</p>
         </a>
         <div class="flex md:order-2">
           <a href="/login"><button type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 :bg-blue-600 :hover:bg-blue-700 focus:outline-none :focus:ring-blue-800">Login</button></a>
+              class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 :bg-blue-600 :hover:bg-blue-700 focus:outline-none :focus:ring-blue-800">Login</button></a>
 
           <button data-collapse-toggle="navbar-sticky" type="button"
             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
@@ -70,27 +72,27 @@
         </div>
         <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul
-            class="flex flex-col p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+            class="flex flex-col p-4 mt-4 items-center rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0  ">
             <li>
               <a href="#home"
-                class="block  py-2 pr-4 pl-3 lg:text-base text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
+                class="block  py-2 pr-4 pl-3 lg:text-lg text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 "
                 aria-current="page">Beranda</a>
             </li>
             <li>
               <a href="#kategori"
-                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Kategori</a>
+                class="block py-2 pr-4 pl-3 lg:text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Kategori</a>
             </li>
             <li>
               <a href="#create-profile"
-                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Fitur</a>
+                class="block py-2 pr-4 pl-3 lg:text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Fitur</a>
             </li>
             <li>
               <a href="#testimoni"
-                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Testimoni</a>
+                class="block py-2 pr-4 pl-3 lg:text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Testimoni</a>
             </li>
             <li>
               <a href="/tim-list"
-                class="block py-2 pr-4 pl-3 lg:text-base text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Team
+                class="block py-2 pr-4 pl-3 lg:text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Team
                 List</a>
             </li>
           </ul>
@@ -111,7 +113,7 @@
             </h1>
 
             <p class="mt-4 sm:text-xl sm:leading-relaxed">
-              TeamUp membentuk tim freelance, cari dan rekrut untuk mahasiswa atau teamleader, sedia list job freelance.
+              TeamUp adalah website untuk membentuk tim freelance, Anda bisa membuat tim lalu merekrut talent dari segala kalangan atau Anda bisa menjadi seorang pelamar tim.
             </p>
 
             <div class="mt-8 flex flex-wrap justify-center gap-4">
@@ -138,7 +140,7 @@
   </div>
 
   <div id="lottie-home" class="hidden xl:block absolute top-48 left-80 w-32"></div>
-  <div id="lottie-home-laptop" class="absolute right-10 bottom-10 w-72 mt-10 xl:mt-0"></div>
+  <div id="lottie-home-laptop" class="hidden md:block absolute right-10 bottom-10 w-72 mt-10 xl:mt-0"></div>
 
   {{-- <section id="infografis" class="w-4/6 mx-auto shadow-2xl rounded-lg h-[600px]">
     <img src="{{asset('/assets/landing page/infografis.png')}}" class="scale-90" alt="">
@@ -150,12 +152,12 @@
 
 
   {{-- carousel companies --}}
-  <div class="">
+  <div class="" data-aos="fade-left" data-aos-duration="500">
     {{-- carousel companies --}}
     <section id="" class="z-0 ">
       <div class="pt-10  ">
-        <h5 class=" px-20 mb-9  text-center font-light font-poppins lg:text-xl text-bold">Bergabunglah dengan Perusahaan
-          Paling Terkenal di Seluruh Dunia</h5>
+        <h5 class=" px-20 mb-9  text-center font-light font-poppins lg:text-xl text-bold">Bergabunglah dengan Tim
+          Paling Populer di Seluruh Dunia</h5>
       </div>
       <div id="animation-carousel" class="relative" data-carousel="slide">
         <!-- Carousel wrapper -->
@@ -249,14 +251,15 @@
 
 
     {{-- categori --}}
-    <section id="kategori">
+    <section id="kategori" data-aos="fade-down" data-aos-duration="1000">
       <div class="pb-9 ">
-        <h5 class="text-center font-poppins pt-10 ">Choose Categories</h5>
-        <h3 class="text-center font-bold font-poppins pb-4 text-3xl text-blue-700">Choose Categories</h3>
+        <h5 class="text-center font-poppins pt-10 ">Kategori</h5>
+        <h3 class="text-center font-bold font-poppins pb-4 text-3xl text-blue-700">Pilih Kategori Tim</h3>
 
         {{-- swiper mobile --}}
         <div class="swiper mySwiper md:hidden lg:hidden">
           <div class="swiper-wrapper sm:mb-5">
+            
             <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
                 class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
@@ -265,203 +268,145 @@
 
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Project
                       Management
                     </h3>
                     <p class="pl-4 text-[#828282] ">87 tim tersedia</p>
                   </div>
                 </div>
               </div>
-              <div
-                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-6 ">
-                  <div>
-                    <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
-                  </div>
-                  <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
-                      Design
-                    </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
-                  </div>
-                </div>
-              </div>
+             
 
             </div>
-
-            <div class="swiper-slide sm:flex  sm:justify-items-center ">
+            
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
                 class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
                 <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
-                  <div id="project1" class="w-20 ml-2">
+                  <div id="editor1" class="w-20 ml-2">
 
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
-                      Management
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Video Editor
+            
                     </h3>
-                    <p class="pl-4 text-[#828282] ">87 tim tersedia</p>
+                    <p class="pl-4 text-[#828282] ">120 tim tersedia</p>
                   </div>
                 </div>
               </div>
-              <div
-                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-6 ">
-                  <div>
-                    <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
-                  </div>
-                  <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
-                      Design
-                    </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
-                  </div>
-                </div>
-              </div>
+             
 
             </div>
 
-            <div class="swiper-slide sm:flex  sm:justify-items-center sm:mx-[15%]">
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A] sm:mt-3  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[328px] sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-12 sm:pt-8">
-                  <img src="{{asset('img/marketing.png')}}" class="pl-8 sm:pl-4 " alt="">
-                  <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-5    ">Marketing &
-                    Communication
-                  </h3>
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="finance1" class="w-20 ml-2">
 
-                </div>
-              </div>
-              <div
-                class=" text-[#F2994A] hidden sm:block md:hidden  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-6 ">
-                  <div>
-                    <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
-                      Design
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Finance Management
                     </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
+                    <p class="pl-4 text-[#828282] ">230 tim tersedia</p>
                   </div>
                 </div>
               </div>
+              
 
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/ui.png')}}" width="" class="pl-12 sm:pl-4 " alt="">
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="web1" class="w-20 ml-2">
+
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">UI / UX <br>
-                      Design
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Web Development
                     </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
+                    <p class="pl-4 text-[#828282] ">100 tim tersedia</p>
                   </div>
                 </div>
               </div>
+              
 
             </div>
-            <div class="swiper-slide">
+
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/finance.png')}}" width="120px" class="pl-4 sm:pl-4 " alt="">
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="graphic1" class="w-20 ml-2">
+
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Finance
-                      Management
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Graphic Designer
                     </h3>
-                    <p class="pl-2 text-[#828282] hover:text-[#F2F2F2]">230 Jobs Available</p>
+                    <p class="pl-4 text-[#828282] ">65 tim tersedia</p>
                   </div>
                 </div>
               </div>
+              
+
             </div>
-            <div class="swiper-slide">
+
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/web.png')}}" width="90px" class="pl-4 sm:pl-4 " alt="">
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="business1" class="w-20 ml-2">
+
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Web <br>
-                      Development
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Business & Consulting
                     </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">100 Jobs Available</p>
+                    <p class="pl-4 text-[#828282] ">23 tim tersedia</p>
                   </div>
                 </div>
               </div>
+              
+
             </div>
-            <div class="swiper-slide">
+
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/pm.png')}}" width="85px" class="pl-6 sm:pl-4 " alt="">
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="ui1" class="w-20 ml-2">
+
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Project
-                      Management
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">UI / UX Designer
                     </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">87 Jobs Available</p>
+                    <p class="pl-4 text-[#828282] ">120 tim tersedia</p>
                   </div>
                 </div>
               </div>
+              
+
             </div>
-            <div class="swiper-slide">
+
+            <div class="swiper-slide sm:flex  sm:justify-center ">
               <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/bisnis.png')}}" width="100px" class="pl-4 sm:pl-4 " alt="">
+                class=" text-[#828282]   transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110  duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
+                <div class="flex justify-items-center pt-10 sm:pt-8 md:pt-6 xl:pt-5 ">
+                  <div id="marketing1" class="w-20 ml-2">
+
                   </div>
                   <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Business &
-                      Consulting
+                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4">Marketing & Communication
                     </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">23 Jobs Available</p>
+                    <p class="pl-4 text-[#828282] ">120 tim tersedia</p>
                   </div>
                 </div>
               </div>
+              
+
             </div>
-            <div class="swiper-slide">
-              <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/grapik.png')}}" width="90px" class="pl-6 sm:pl-4 " alt="">
-                  </div>
-                  <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-2    ">Graphic <br>
-                      Designer
-                    </h3>
-                    <p class="pl-2 text-[#828282] hover:text-[#F2F2F2]">65 Jobs Available</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class=" text-[#F2994A]  hover:text-white transition ease-in-out delay-150 bg-gray-50 hover:-translate-y-1 hover:scale-110 hover:bg-[#F2994A] duration-300  rounded-3xl shadow-xl w-[300px] mt-3 sm:w-[250px]  h-[160px] sm:h-[120px]  mx-auto  sm:mx-4 mb-9 ">
-                <div class="flex justify-items-center  pt-10 sm:pt-8 ">
-                  <div>
-                    <img src="{{asset('img/video.png')}}" width="90px" class="pl-4 sm:pl-4 " alt="">
-                  </div>
-                  <div>
-                    <h3 class="text-[21px] sm:text-[18px] font-bold font-poppins pl-4    ">Video <br>
-                      Editor
-                    </h3>
-                    <p class="pl-4 text-[#828282] hover:text-[#F2F2F2]">120 Jobs Available</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            
           </div>
           <div class="swiper-pagination "></div>
         </div>
@@ -592,12 +537,12 @@
 
 
   {{-- fiture 2 --}}
-  <section id="create-profile" class="md:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
-    <div id="member-lg" class="md:w-[700px] md:-ml-24 "></div>
-    <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
+  <section id="create-profile" class="md:mx-20 md:shadow-none md:rounded-none overflow-hidden w-[90%] mx-auto shadow-md md:grid rounded-lg md:grid-cols-2 mt-10">
+    <div data-aos="fade-right" data-aos-duration="1000" id="leader" class="md:w-[800px] md:-ml-24 "></div>
+    <div data-aos="fade-left" data-aos-duration="1000" class="  p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="md:mx-auto max-w-xl text-center sm:text-left">
         <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
-          Buatlah Tim Impianmu!
+          Buat Tim Impianmu!
         </h2>
 
         <p class="text-left md:text-xl text-lg   md:mt-4 md:block">
@@ -627,7 +572,7 @@
           Account</button> --}}
 
         <div class="mt-4 md:mt-8">
-          <a href="#"
+          <a href="/register"
             class="inline-block rounded-full bg-blue-500 px-12 py-3 text-sm font-medium text-white transition  focus:outline-none focus:ring focus:ring-yellow-400">
             Buat Akun
           </a>
@@ -644,8 +589,8 @@
 
   {{-- fiture 1 --}}
 
-  <section class="md:first-letter:mx-20 overflow-hidden  md:grid md:grid-cols-2 mt-10">
-    <div class="  p-8 md:p-12 lg:px-16 lg:py-24">
+  <section class="md:first-letter:mx-20 overflow-hidden shadow-md mb-10 rounded-lg md:shadow-none md:rounded-none w-[90%] flex flex-col mx-auto md:grid md:grid-cols-2 mt-10">
+    <div data-aos="fade-right" data-aos-duration="1000" class="order-2 md:order-1 p-8 md:p-12 lg:px-16 lg:py-24">
       <div class="mx-auto max-w-xl text-center sm:text-left">
         <h2 class="text-left text-xl font-bold text-gray-900 md:text-4xl">
           Gabung Ke Tim Impianmu!
@@ -658,7 +603,7 @@
 
         <div class="mt-2 md:mt-0 md:text-xl text-lg text-left">
           <p class="  md:mt-4 md:block">
-            <i class='bx bxs-badge-check'></i> Cari team sesuai keinginan
+            <i class='bx bxs-badge-check'></i> Cari tim sesuai keinginan
           </p>
           <p class="  mt-1 md:block">
             <i class='bx bxs-badge-check'></i> Daftarkan diri sebagai member
@@ -670,7 +615,7 @@
             <i class='bx bxs-badge-check'></i> Task dan deadline
           </p>
           <p class=" mt-1  md:block">
-            <i class='bx bxs-badge-check'></i> Chat dengan tim dan project manager
+            <i class='bx bxs-badge-check'></i> Chat dengan tim dan member lain
           </p>
         </div>
 
@@ -679,7 +624,7 @@
           Account</button> --}}
 
         <div class=" md:mt-8">
-          <a href="#"
+          <a href="/register"
             class="inline-block rounded-full bg-blue-500 px-12 py-3 text-sm font-medium text-white transition  focus:outline-none focus:ring focus:ring-yellow-400">
             Buat Akun
           </a>
@@ -687,7 +632,7 @@
       </div>
     </div>
 
-    <div id="leader" class="xl:w-[800px] w-[500px] mx-auto xl:-ml-24"></div>
+    <div data-aos="fade-left" data-aos-duration="1000" id="member-lg" class="order-1 md:order-2 xl:w-[800px]  mx-auto xl:-ml-24"></div>
   </section>
 
 
@@ -697,7 +642,7 @@
 
 
 
-  <section id="testimoni" class="bg-gray-100">
+  <section id="testimoni" class="bg-gray-100" data-aos="fade-left" data-aos-duration="1000">
     <div class="mx-auto max-w-[1340px] px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0">
       <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
         <div class="max-w-xl text-center sm:text-left">
@@ -910,114 +855,115 @@
 
 
 
-  <div class="text-center mt-24  mb-12">
-    <h1 class="  lg:text-3xl text-xs font-bold text-gray-700 :text-gray-200">Pertanyaan yang paling sering
-      ditanyakan
-    </h1>
-    <p class="mt-1"></p>
-
-  </div>
-  <div class="space-y-4 mx-10">
-    <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
-      <summary class="flex items-center justify-between cursor-pointer">
-        <h2 class="text-lg font-medium text-gray-900">
-          Apa Itu TeamUp
-        </h2>
-
-        <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </summary>
-
-      <p class="mt-4 leading-relaxed text-gray-700">
-        TeamUp adalah sebuah website yang dipergunakan untuk membentuk timfreelance, secara garis besar website ini
-        nantinya dipergunakan untuk mencari tim freelance bagi seorang mahasiswa / seseorang yang memutuhkan tim dan
-        digunakan untuk membuat tim bagi seseorang freelance yang sedang kebanjiran job (teamleader) dan dia ingin
-        merekrut tim, maka dia dapat membuka rekrutmen dengan berbagai ketentuan sesuai kebutuhan teamleader di website
-        TeamUp, dan nantinya di website TeamUp juga akan menyediakan list pekerjaan freelance yang diambil dari API
-        website freelance.com
-      </p>
-    </details>
-
-    <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-      <summary class="flex items-center justify-between cursor-pointer">
-        <h2 class="text-lg font-medium text-gray-900">
-          Apakah Saya Bisa Mendaftar Sebagai Anggota Team Freelance ?
-        </h2>
-
-        <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </summary>
-
-      <p class="mt-4 leading-relaxed text-gray-700">
-        Tentu saja, anda bisa mendaftar sebagai member di website TeamUp, dengan menjadi member anda bisa mencari
-        timfreelance yang sesuai dengan keahlian anda, dan anda juga bisa membuat timfreelance sendiri dengan
-        berbagai ketentuan yang anda inginkan.
-      </p>
-    </details>
-
-    <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-      <summary class="flex items-center justify-between cursor-pointer">
-        <h2 class="text-lg font-medium text-gray-900">
-          Apa Saya Bisa mendaftar sebagai TeamLeader ?
-        </h2>
-
-        <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </summary>
-
-      <p class="mt-4 leading-relaxed text-gray-700">
-        Tentu saja, anda bisa mendaftar sebagai teamleader di website TeamUp, dengan menjadi teamleader anda bisa
-        mencari timfreelance yang sesuai dengan keahlian anda, dan anda juga bisa membuat timfreelance sendiri dengan
-        berbagai ketentuan yang anda inginkan.
-      </p>
-    </details>
-
-    <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-      <summary class="flex items-center justify-between cursor-pointer">
-        <h2 class="text-lg font-medium text-gray-900">
-          Saya lulusan SMA, apakah saya bisa menjadi freelancer?
-        </h2>
-
-        <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
-            fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </summary>
-
-      <p class="mt-4 leading-relaxed text-gray-700">
-        Tentu saja, anda bisa menjadi freelancer, dengan menjadi freelancer anda bisa mencari timfreelance yang
-        sesuai dengan keahlian anda, dan anda juga bisa membuat timfreelance sendiri dengan berbagai ketentuan yang
-        anda inginkan.
-      </p>
-    </details>
-
-
+  <div data-aos="fade-right" data-aos-duration="1000">
+    <div class="text-center mt-24  mb-12">
+      <h1 class="  lg:text-3xl text-xs font-bold text-gray-700 :text-gray-200">Pertanyaan yang paling sering
+        ditanyakan
+      </h1>
+      <p class="mt-1"></p>
+  
+    </div>
+    <div class="space-y-4 mx-10">
+      <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
+        <summary class="flex items-center justify-between cursor-pointer">
+          <h2 class="text-lg font-medium text-gray-900">
+            Apa Itu TeamUp
+          </h2>
+  
+          <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </summary>
+  
+        <p class="mt-4 leading-relaxed text-gray-700">
+          TeamUp adalah sebuah website yang dipergunakan untuk membentuk timfreelance, secara garis besar website ini
+          nantinya dipergunakan untuk mencari tim freelance bagi seorang mahasiswa / seseorang yang membutuhkan tim atau
+          digunakan untuk membuat tim bagi seseorang freelance yang sedang kebanjiran job dan dia ingin
+          merekrut tim, maka dia dapat membuka rekrutmen dengan berbagai ketentuan sesuai kebutuhan tim di website
+          TeamUp.
+        </p>
+      </details>
+  
+      <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <h2 class="text-lg font-medium text-gray-900">
+            Apakah Saya Bisa Mendaftar Sebagai Anggota Tim Freelance ?
+          </h2>
+  
+          <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </summary>
+  
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Tentu saja, anda bisa mendaftar sebagai member di website TeamUp, dengan menjadi member anda bisa mencari
+          tim freelance yang sesuai dengan keahlian anda, dan anda juga bisa membuat tim freelance sendiri dengan
+          berbagai ketentuan yang anda inginkan.
+        </p>
+      </details>
+  
+      <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <h2 class="text-lg font-medium text-gray-900">
+            Apa Saya Bisa mendaftar sebagai Tim Leader ?
+          </h2>
+  
+          <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </summary>
+  
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Tentu saja, anda bisa mendaftar sebagai tim leader di website TeamUp, dengan menjadi tim leader anda bisa
+          mencari tim freelance yang sesuai dengan keahlian anda, dan anda juga bisa membuat tim freelance sendiri dengan
+          berbagai ketentuan yang anda inginkan.
+        </p>
+      </details>
+  
+      <details class="group border-l-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center justify-between cursor-pointer">
+          <h2 class="text-lg font-medium text-gray-900">
+            Saya lulusan SMA, apakah saya bisa menjadi freelancer?
+          </h2>
+  
+          <span class="ml-1.5 flex-shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </summary>
+  
+        <p class="mt-4 leading-relaxed text-gray-700">
+          Tentu saja, anda bisa menjadi freelancer, siapkan CV dan Portfolio lalu anda bisa mencari tim freelance yang
+          sesuai dengan keahlian anda, dan anda juga bisa membuat tim freelance sendiri dengan berbagai ketentuan yang
+          anda inginkan.
+        </p>
+      </details>
+  
+  
+    </div>
   </div>
 
 
@@ -1068,8 +1014,7 @@
           </div>
 
           <p class="max-w-xs mt-4 text-gray-500">
-            teamup is a platform for teams to manage their projects, tasks and documents, communicate and plan their
-            work.
+            TeamUp adalah website untuk membentuk tim freelance, Anda bisa membuat tim lalu merekrut talent dari segala kalangan atau Anda bisa menjadi seorang pelamar tim.
           </p>
 
           <ul class="flex gap-6 mt-8">
@@ -1136,63 +1081,37 @@
 
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
           <div>
-            <p class="font-medium text-gray-900">Services</p>
+            <p class="font-medium text-gray-900">Layanan</p>
 
             <nav aria-label="Footer Navigation - Services" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    1on1 Coaching
+                    Pembuatan Tim Freelance
                   </a>
                 </li>
 
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Company Review
+                    Lamar Tim
                   </a>
                 </li>
 
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Accounts Review
+                    Manajemen Tim
                   </a>
                 </li>
 
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    HR Consulting
+                    Manajemen Projek Tim
                   </a>
                 </li>
 
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    SEO Optimisation
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div>
-            <p class="font-medium text-gray-900">Company</p>
-
-            <nav aria-label="Footer Navigation - Company" class="mt-6">
-              <ul class="space-y-4 text-sm">
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    About
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Meet the Team
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Accounts Review
+                    Manajemen Tugas Tim
                   </a>
                 </li>
               </ul>
@@ -1200,13 +1119,39 @@
           </div>
 
           <div>
-            <p class="font-medium text-gray-900">Helpful Links</p>
+            <p class="font-medium text-gray-900">Perusahaan</p>
 
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Contact
+                    Tentang Kita
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Bergabung Bersama Kami
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Saran
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div>
+            <p class="font-medium text-gray-900">Pusat Bantuan</p>
+
+            <nav aria-label="Footer Navigation - Company" class="mt-6">
+              <ul class="space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">
+                    Kontak Kami
                   </a>
                 </li>
 
@@ -1226,33 +1171,22 @@
           </div>
 
           <div>
-            <p class="font-medium text-gray-900">Legal</p>
+            <p class="font-medium text-gray-900">Legalitas</p>
 
             <nav aria-label="Footer Navigation - Legal" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Accessibility
+                    Aksesbilitas
                   </a>
                 </li>
 
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Returns Policy
+                    Privasi dan Keamanan
                   </a>
                 </li>
 
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Refund Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Hiring Statistics
-                  </a>
-                </li>
               </ul>
             </nav>
           </div>
@@ -1260,7 +1194,7 @@
       </div>
 
       <p class="text-xs text-gray-500">
-        &copy; 2022. Company Name. All rights reserved.
+        &copy; 2023. TeamUp. All rights reserved.
       </p>
     </div>
   </footer>
@@ -1274,7 +1208,10 @@
 
 
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   {{-- <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> --}}
   <!-- Swiper JS -->
@@ -1371,12 +1308,32 @@
   })
   </script>
 
+  <script>
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById('graphic1'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '{{asset('lottie/38373-icon-graphic-designer.json')}}'
+  })
+  </script>
+
 
 
 
   <script>
     var animation = bodymovin.loadAnimation({
     container: document.getElementById('web'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '{{asset('lottie/121574-web-development.json')}}'
+  })
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById('web1'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -1398,6 +1355,16 @@
   <script>
     var animation = bodymovin.loadAnimation({
   container: document.getElementById('analytics'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '{{asset('lottie/68474-analytics.json')}}'
+})
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+  container: document.getElementById('business1'),
   renderer: 'svg',
   loop: true,
   autoplay: true,
@@ -1430,6 +1397,16 @@
   <script>
     var animation = bodymovin.loadAnimation({
 container: document.getElementById('com'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/106080-digital-marketing-or-promotion-in-app-animation.json')}}'
+})
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('marketing1'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
@@ -1470,6 +1447,16 @@ path: '{{asset('lottie/122848-graph.json')}}'
 })
   </script>
 
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('finance1'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/122848-graph.json')}}'
+})
+  </script>
+
 
 
   <script>
@@ -1495,7 +1482,27 @@ path: '{{asset('lottie/122848-graph.json')}}'
 
   <script>
     var animation = bodymovin.loadAnimation({
+  container: document.getElementById('editor1'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '{{asset('lottie/70482-produccion-audiovisual.json')}}'
+})
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
 container: document.getElementById('ui'),
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: '{{asset('lottie/93152-ui-app-icon.json')}}'
+})
+  </script>
+
+  <script>
+    var animation = bodymovin.loadAnimation({
+container: document.getElementById('ui1'),
 renderer: 'svg',
 loop: true,
 autoplay: true,

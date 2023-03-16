@@ -11,8 +11,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
+    <link
+    href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+    rel="stylesheet"
+    />
 
-    <title>Document</title>
+    <title>Profile</title>
 </head>
 
 <body>
@@ -20,206 +26,148 @@
     <div>
 
         {{--Navbar MD LG XL--}}
-        <nav class="hidden md:block mx-20 z-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
-            <div class="container flex flex-wrap items-center justify-between mx-auto">
-                <a href="https://flowbite.com/" class="flex items-center">
+    <nav class="mb-4 hidden md:block mx-20  border-gray-200 px-2 sm:px-4 py-2.5 rounded :bg-gray-900">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="/" class="flex items-center">
+                <img src="{{asset('assets/img/logos/logo.png')}}" class=" h-9 sm:h-9" alt="TeamUp Logo">
+                <p class="text-2xl font-bold text-blue-500">TeamUp</p>
+              </a>
+            <div class="flex md:order-2">
 
-                    <span class="self-center text-xl font-semibold whitespace-nowrap :text-white">TeamUp</span>
-                </a>
-                <div class="flex md:order-2">
+                <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+                    class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 :focus:ring-gray-600"
+                    type="button">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-4.jpg')}}" alt="user photo">
+                </button>
 
-                    <button id="dropdownUserAvatarButton1" data-dropdown-toggle="dropdownAvatar1"
-                        class="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 :focus:ring-gray-600"
-                        type="button">
-                        <span class="sr-only">Open user menu</span>
-                        <img class="w-8 h-8 rounded-full" src="{{asset('assets/img/team-4.jpg')}}" alt="user photo">
-                    </button>
-
-                    <!-- Dropdown menu -->
-                    <div id="dropdownAvatar1"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 :bg-gray-700 :divide-gray-600">
-                        <div class="px-4 py-3 text-sm text-gray-900 :text-white">
-                            <div>John Doe
-                            </div>
-                            <div class="font-medium truncate">john@gmail.com</div>
+                <!-- Dropdown menu -->
+                <div id="dropdownAvatar"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 :bg-gray-700 :divide-gray-600">
+                    <div class="px-4 py-3 text-sm text-gray-900 :text-white">
+                        <div>John Doe
                         </div>
-                        <ul class="py-2 text-sm text-gray-700 :text-gray-200"
-                            aria-labelledby="dropdownUserAvatarButton1">
-                            <li>
-                                <a href="/profile"
-                                    class="block px-4 py-2 hover:bg-gray-100 :hover:bg-gray-600 :hover:text-white">Profil
-                                    Saya</a>
-                            </li>
-
-                            {{-- <li class="px-4">
-
-                                <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-4 py-2.5 text-center inline-flex items-center :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800"
-                                    type="button">Mode <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 9l-7 7-7-7"></path>
-                                    </svg></button>
-
-                                <!-- Dropdown menu -->
-                                <div id="dropdownHelperRadio"
-                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 :bg-gray-700 :divide-gray-600"
-                                    data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top"
-                                    style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
-                                    <ul class="p-3 space-y-1 text-sm text-gray-700 :text-gray-200"
-                                        aria-labelledby="dropdownHelperRadioButton">
-
-                                        <li>
-                                            <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
-                                                <div class="flex items-center h-5">
-                                                    <input x-on:change="mode='leader'" id="helper-radio-4" name="mode"
-                                                        type="radio" :checked="mode=='leader' ? true : false"
-                                                        value="leader"
-                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
-                                                </div>
-                                                <div class="ml-2 text-sm">
-                                                    <label for="helper-radio-4"
-                                                        class="font-medium text-gray-900 :text-gray-300">
-                                                        <div>Leader</div>
-                                                        <p id="helper-radio-text-4"
-                                                            class="text-xs font-normal text-gray-500 :text-gray-300">
-                                                            tombol
-                                                            edit, hapus, tambah dan status tim terlihat</p>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
-                                                <div class="flex items-center h-5">
-                                                    <input id="helper-radio-5" x-on:change="mode='member'" name="mode"
-                                                        type="radio" :checked="mode=='member' ? true : false"
-                                                        value="member"
-                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
-                                                </div>
-                                                <div class="ml-2 text-sm">
-                                                    <label for="helper-radio-5"
-                                                        class="font-medium text-gray-900 :text-gray-300">
-                                                        <div>Member</div>
-                                                        <p id="helper-radio-text-5"
-                                                            class="text-xs font-normal text-gray-500 :text-gray-300">
-                                                            tombol
-                                                            edit, hapus, tambah dan status tim tidak terlihat</p>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </li> --}}
-                        </ul>
-                        <div class="py-2">
-                            <a href="#"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 :hover:bg-gray-600 :text-gray-200 :hover:text-white">Logout</a>
-                        </div>
+                        <div class="font-medium truncate">john@gmail.com</div>
                     </div>
-
-                    <button data-collapse-toggle="navbar-cta1" type="button"
-                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
-                        aria-controls="navbar-cta1" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                    <ul
-                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  :bg-gray-800 md::bg-gray-900 :border-gray-700">
-
+                    <ul class="py-2 text-sm text-gray-700 :text-gray-200" aria-labelledby="dropdownUserAvatarButton">
                         <li>
-                            <a href="/tim-channel"
-                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 :text-white"
-                                aria-current="page">Tim channel</a>
-                        </li>
-                        <li>
-                            <a href="/myteam"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
+                            <a href="/profile"
+                                class="block px-4 py-2 hover:bg-gray-100 :hover:bg-gray-600 :hover:text-white">Profil
                                 Saya</a>
                         </li>
-                        <li>
-                            <a href="/tim-list"
-                                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
-                                List</a>
-                        </li>
 
-
-
-                        <li class="">
-
-                            <button id="dropdownHelperRadioButton1" data-dropdown-toggle="dropdownHelperRadio1"
-                                class="block py-2 pl-6  pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
-                                type="button">Mode <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7"></path>
-                                </svg></button>
-
-                            <!-- Dropdown menu -->
-                            <div id="dropdownHelperRadio1"
-                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 :bg-gray-700 :divide-gray-600"
-                                data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top"
-                                style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
-                                <ul class="p-3 space-y-1 text-sm text-gray-700 :text-gray-200"
-                                    aria-labelledby="dropdownHelperRadioButton1">
-
-                                    <li>
-                                        <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
-                                            <div class="flex items-center h-5">
-                                                <input x-on:change="mode='leader'" id="helper-radio-4" name="mode"
-                                                    type="radio" :checked="mode=='leader' ? true : false" value="leader"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
-                                            </div>
-                                            <div class="ml-2 text-sm">
-                                                <label for="helper-radio-4"
-                                                    class="font-medium text-gray-900 :text-gray-300">
-                                                    <div>Leader</div>
-                                                    <p id="helper-radio-text-4"
-                                                        class="text-xs font-normal text-gray-500 :text-gray-300">tombol
-                                                        edit, hapus, tambah dan status tim terlihat</p>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
-                                            <div class="flex items-center h-5">
-                                                <input id="helper-radio-5" x-on:change="mode='member'" name="mode"
-                                                    type="radio" :checked="mode=='member' ? true : false" value="member"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
-                                            </div>
-                                            <div class="ml-2 text-sm">
-                                                <label for="helper-radio-5"
-                                                    class="font-medium text-gray-900 :text-gray-300">
-                                                    <div>Member</div>
-                                                    <p id="helper-radio-text-5"
-                                                        class="text-xs font-normal text-gray-500 :text-gray-300">tombol
-                                                        edit, hapus, tambah dan status tim tidak terlihat</p>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </li>
-
-
+            
                     </ul>
+                    <div class="py-2">
+                        <a href="#"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 :hover:bg-gray-600 :text-gray-200 :hover:text-white">Logout</a>
+                    </div>
                 </div>
+
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
             </div>
-        </nav>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col p-4 mt-4 items-center border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0  :bg-gray-800 md::bg-gray-900 :border-gray-700">
+
+                    {{-- <li>
+                        <a href="/tim-channel"
+                            class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 :text-white"
+                            aria-current="page">Tim channel</a>
+                    </li> --}}
+
+                    <li>
+                        <a href="/tim-channel"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
+                            Channel</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tim-saya"
+                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700
+                        "
+                        aria-current="page">Tim Saya</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tim-list"
+                            class="
+                            block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700">Tim
+                            List</a>
+                    </li>
+                    
+
+                    <li class="">
+
+                        <button id="dropdownHelperRadioButton" data-dropdown-toggle="dropdownHelperRadio"
+                            class=" text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md::hover:text-white :text-gray-400 :hover:bg-gray-700 :hover:text-white md::hover:bg-transparent :border-gray-700"
+                            type="button">Mode</button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHelperRadio"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 :bg-gray-700 :divide-gray-600"
+                            data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top"
+                            style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(522.5px, 6119.5px, 0px);">
+                            <ul class="p-3 space-y-1 text-sm text-gray-700 :text-gray-200"
+                                aria-labelledby="dropdownHelperRadioButton">
+
+                                <li>
+                                    <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
+                                        <div class="flex items-center h-5">
+                                            <input x-on:change="mode='leader'" id="helper-radio-4" name="mode"
+                                                type="radio" :checked="mode=='leader' ? true : false" value="leader"
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="helper-radio-4"
+                                                class="font-medium text-gray-900 :text-gray-300">
+                                                <div>Leader</div>
+                                                <p id="helper-radio-text-4"
+                                                    class="text-xs font-normal text-gray-500 :text-gray-300">tombol
+                                                    tambah tim terlihat, tombol lamar tim hilang</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex p-2 rounded hover:bg-gray-100 :hover:bg-gray-600">
+                                        <div class="flex items-center h-5">
+                                            <input id="helper-radio-5" x-on:change="mode='member'" name="mode"
+                                                type="radio" :checked="mode=='member' ? true : false" value="member"
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 :focus:ring-blue-600 :ring-offset-gray-700 :focus:ring-offset-gray-700 focus:ring-2 :bg-gray-600 :border-gray-500">
+                                        </div>
+                                        <div class="ml-2 text-sm">
+                                            <label for="helper-radio-5"
+                                                class="font-medium text-gray-900 :text-gray-300">
+                                                <div>Member</div>
+                                                <p id="helper-radio-text-5"
+                                                    class="text-xs font-normal text-gray-500 :text-gray-300">tombol
+                                                    tambah tim hilang, tombol lamar tim terlihat</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
       
 
         {{-- @if (session('success'))
@@ -236,12 +184,15 @@
                     <div class="relative flex h-32 w-full justify-center rounded-xl bg-cover">
                         <img src='https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/banner.ef572d78f29b0fee0a09.png'
                             class="absolute flex h-32 w-full justify-center rounded-xl bg-cover">
-                        <div
-                            class="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-[4px] border-white bg-pink-400 dark:!border-navy-700">
-                            <img class="h-full w-full rounded-full"
-                                src='https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar11.1060b63041fdffa5f8ef.png'
-                                alt="" />
-                        </div>
+                            <div class="absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border-[2px] border-white  dark:!border-navy-700">
+                                {{-- <img class="h-full w-full rounded-full" src='https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/media/avatar11.1060b63041fdffa5f8ef.png' alt="" /> --}}
+                                <div class="mx-auto w-[87px] h-[87px]  mb-4 shadow-inset">
+                                    <input class="my-pond" type="file" 
+                                    class="filepond"
+                                    name="filepond"
+                                    accept="image/*"/>
+                                </div>
+                            </div>
                     </div>
                     <div class="mt-16 flex flex-col items-center">
                         <h4 class="text-xl font-bold text-navy-700 dark:text-white">
@@ -283,9 +234,7 @@
                 <hr class="my-7 h-px bg-gray-200 border-0 ">
 
 
-                <form action="{{url('/profile')}}" method="POST">
-                    @csrf
-                    @method('PUT')
+               
                     <div class="grid gap-6 mb-6 md:grid-cols-2">
                         <div>
                             <label for="name"
@@ -362,7 +311,7 @@
 
                     <button type="submit"
                         class="text-white inline-block mx-auto flex justify-center items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Update</button>
-                </form>
+                
 
 
             </div>
@@ -372,6 +321,14 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+
+<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <script>
         let ctx = document.getElementById('chart').getContext('2d');
         console.log(ctx)
@@ -411,6 +368,41 @@
       
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    
+    <script>
+        FilePond.registerPlugin(
+    
+    FilePondPluginImagePreview,
+    FilePondPluginImageCrop,
+    FilePondPluginImageResize,
+    FilePondPluginImageTransform,
+    );
+    
+    // Select the file input and use 
+    // create() to turn it into a pond
+    const avatar = FilePond.create(
+    document.querySelector('.my-pond'),
+    {
+        labelIdle: `Avatar`,
+        imagePreviewHeight: 87,
+        imageCropAspectRatio: '1:1',
+        imageResizeTargetWidth: 87,
+        imageResizeTargetHeight: 87,
+        stylePanelLayout: 'compact circle',
+        styleButtonRemoveItemPosition: 'center bottom',
+        files: [
+        {
+            source: "{{asset('assets/tim/1.png')}}",
+            options: {
+                type: 'remote'
+            }
+        }
+        ]
+    }
+    );
+    
+    </script>
 </body>
 
 </html>
